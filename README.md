@@ -7,4 +7,4 @@ The official [Simulator](http://localhost:8080) documentation, built with [Docus
 ---
 
 - [Contributing Guide](./CONTRIBUTING.md) :flashlight:
-<!-- - [Project Board](https://github.com/ionic-team/ionic-docs/projects/3) :pushpin: -->
+<!-- - [Project Board](http://localhost:8080/git/projects/3) :pushpin: -->

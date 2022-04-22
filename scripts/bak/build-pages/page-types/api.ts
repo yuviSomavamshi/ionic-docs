@@ -77,7 +77,7 @@ const getDemoUrl = async (component: any) => {
   if (hasDemo) {
     return {
       demoUrl: `/docs/demos/${demoPath}`,
-      demoSourceUrl: `https://github.com/ionic-team/ionic-docs/tree/master/src/demos/${demoPath}`
+      demoSourceUrl: `http://localhost:8080/git/tree/master/src/demos/${demoPath}`
     };
   }
 };

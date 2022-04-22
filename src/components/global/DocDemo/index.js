@@ -41,8 +41,9 @@ const DocDemo = (props) => {
 
   const modeToggle = (
     <div className="docs-demo-mode-toggle">
-      {['ios', 'md'].map((mode) => (
+      {['ios', 'md'].map((mode, index) => (
         <button
+          key={index}
           className={clsx({
             'is-selected': mode === ionicMode,
           })}

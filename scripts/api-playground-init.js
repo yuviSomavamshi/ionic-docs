@@ -72,7 +72,7 @@ function renderFrontmatter({ tag }) {
   const demoPath = `api/${tag.slice(4)}/index.html`;
   if (fs.existsSync(path.join(DEMOS_PATH, demoPath))) {
     frontmatter.demoUrl = `/docs/demos/${demoPath}`;
-    frontmatter.demoSourceUrl = `https://github.com/ionic-team/ionic-docs/tree/main/static/demos/${demoPath}`;
+    frontmatter.demoSourceUrl = `http://localhost:8080/git/tree/main/static/demos/${demoPath}`;
   }
 
   return `---

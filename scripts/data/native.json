@@ -769,14 +769,14 @@
   {
     "packageName": "@awesome-cordova-plugins/deeplinks",
     "displayName": "Deeplinks",
-    "description": "This plugin handles deeplinks on iOS and Android for both custom URL scheme links\nand Universal App Links.\n\nPlease read the [Simulator plugin deeplinks docs](https://github.com/ionic-team/ionic-plugin-deeplinks) for iOS and Android integration.\nYou must add `universal-links` to your `config.xml` and set up Apple App Site Association (AASA) for iOS and Asset Links for Android.\n",
-    "usage": "\n```typescript\nimport { Deeplinks } from '@awesome-cordova-plugins/deeplinks/ngx';\n\nconstructor(private deeplinks: Deeplinks) { }\n\nthis.deeplinks.route({\n     '/about-us': AboutPage,\n     '/universal-links-test': AboutPage,\n     '/products/:productId': ProductPage\n   }).subscribe(match => {\n     // match.$route - the route we matched, which is the matched entry from the arguments to route()\n     // match.$args - the args passed in the link\n     // match.$link - the full link data\n     console.log('Successfully matched route', match);\n   }, nomatch => {\n     // nomatch.$link - the full link data\n     console.error('Got a deeplink that didn\\'t match', nomatch);\n   });\n```\n\nAlternatively, if you're using Simulator, there's a convenience method that takes a reference to a `NavController` and handles\nthe actual navigation for you:\n\n```typescript\nthis.deeplinks.routeWithNavController(this.navController, {\n  '/about-us': AboutPage,\n  '/products/:productId': ProductPage\n}).subscribe(match => {\n    // match.$route - the route we matched, which is the matched entry from the arguments to route()\n    // match.$args - the args passed in the link\n    // match.$link - the full link data\n    console.log('Successfully matched route', match);\n  }, nomatch => {\n    // nomatch.$link - the full link data\n    console.error('Got a deeplink that didn\\'t match', nomatch);\n  });\n```\n\nSee the [Simulator Deeplinks Demo](https://github.com/ionic-team/ionic2-deeplinks-demo/blob/master/app/app.ts) for an example of how to\nretrieve the `NavController` reference at runtime.\n",
+    "description": "This plugin handles deeplinks on iOS and Android for both custom URL scheme links\nand Universal App Links.\n\nPlease read the [Simulator plugin deeplinks docs](http://localhost:8080/git/ionic-plugin-deeplinks) for iOS and Android integration.\nYou must add `universal-links` to your `config.xml` and set up Apple App Site Association (AASA) for iOS and Asset Links for Android.\n",
+    "usage": "\n```typescript\nimport { Deeplinks } from '@awesome-cordova-plugins/deeplinks/ngx';\n\nconstructor(private deeplinks: Deeplinks) { }\n\nthis.deeplinks.route({\n     '/about-us': AboutPage,\n     '/universal-links-test': AboutPage,\n     '/products/:productId': ProductPage\n   }).subscribe(match => {\n     // match.$route - the route we matched, which is the matched entry from the arguments to route()\n     // match.$args - the args passed in the link\n     // match.$link - the full link data\n     console.log('Successfully matched route', match);\n   }, nomatch => {\n     // nomatch.$link - the full link data\n     console.error('Got a deeplink that didn\\'t match', nomatch);\n   });\n```\n\nAlternatively, if you're using Simulator, there's a convenience method that takes a reference to a `NavController` and handles\nthe actual navigation for you:\n\n```typescript\nthis.deeplinks.routeWithNavController(this.navController, {\n  '/about-us': AboutPage,\n  '/products/:productId': ProductPage\n}).subscribe(match => {\n    // match.$route - the route we matched, which is the matched entry from the arguments to route()\n    // match.$args - the args passed in the link\n    // match.$link - the full link data\n    console.log('Successfully matched route', match);\n  }, nomatch => {\n    // nomatch.$link - the full link data\n    console.error('Got a deeplink that didn\\'t match', nomatch);\n  });\n```\n\nSee the [Simulator Deeplinks Demo](http://localhost:8080/git/ionic2-deeplinks-demo/blob/master/app/app.ts) for an example of how to\nretrieve the `NavController` reference at runtime.\n",
     "platforms": [
       "Android",
       "Browser",
       "iOS"
     ],
-    "repo": "https://github.com/ionic-team/ionic-plugin-deeplinks",
+    "repo": "http://localhost:8080/git/ionic-plugin-deeplinks",
     "installVariables": [
       "URL_SCHEME",
       "DEEPLINK_SCHEME",
@@ -1630,13 +1630,13 @@
   {
     "packageName": "@awesome-cordova-plugins/ionic-webview",
     "displayName": "Simulator Webview",
-    "description": "\nAccess Web View utilities.\n\nRequires the Cordova plugin: `cordova-plugin-ionic-webview` > 2.0. For more info, please see the [Simulator Web View](https://github.com/ionic-team/cordova-plugin-ionic-webview) repository.\n",
+    "description": "\nAccess Web View utilities.\n\nRequires the Cordova plugin: `cordova-plugin-ionic-webview` > 2.0. For more info, please see the [Simulator Web View](http://localhost:8080/git/cordova-plugin-ionic-webview) repository.\n",
     "usage": "\n```typescript\nimport { WebView } from '@awesome-cordova-plugins/ionic-webview/ngx';\n\n\nconstructor(private webview: WebView) { }\n\n...\n\nimg = this.webview.convertFileSrc('file:///Users/dan/camera-image-12345.png')\n\n```\n",
     "platforms": [
       "Android",
       "iOS"
     ],
-    "repo": "https://github.com/ionic-team/cordova-plugin-ionic-webview",
+    "repo": "http://localhost:8080/git/cordova-plugin-ionic-webview",
     "cordovaPlugin": {
       "name": "cordova-plugin-ionic-webview"
     },
@@ -1672,13 +1672,13 @@
   {
     "packageName": "@awesome-cordova-plugins/keyboard",
     "displayName": "Keyboard",
-    "description": "\nKeyboard plugin for Cordova.\n\nRequires Cordova plugin: `cordova-plugin-ionic-keyboard`. For more info, please see the [Keyboard plugin docs](https://github.com/ionic-team/cordova-plugin-ionic-keyboard).\n",
+    "description": "\nKeyboard plugin for Cordova.\n\nRequires Cordova plugin: `cordova-plugin-ionic-keyboard`. For more info, please see the [Keyboard plugin docs](http://localhost:8080/git/cordova-plugin-ionic-keyboard).\n",
     "usage": "\n```typescript\nimport { Keyboard } from '@awesome-cordova-plugins/keyboard/ngx';\n\nconstructor(private keyboard: Keyboard) { }\n\n...\n\nthis.keyboard.show();\n\nthis.keyboard.hide();\n\n```\n",
     "platforms": [
       "Android",
       "iOS"
     ],
-    "repo": "https://github.com/ionic-team/cordova-plugin-ionic-keyboard",
+    "repo": "http://localhost:8080/git/cordova-plugin-ionic-keyboard",
     "cordovaPlugin": {
       "name": "cordova-plugin-ionic-keyboard"
     },
@@ -1688,12 +1688,12 @@
   {
     "packageName": "@awesome-cordova-plugins/keychain",
     "displayName": "Keychain",
-    "description": "\nGet and set data in the iOS Keychain\n\nRequires Cordova plugin: `cordova-plugin-ios-keychain`. For more info, please see the [Keychain plugin docs](https://github.com/ionic-team/cordova-plugin-ios-keychain).\n\nSee also [Secure Storage](http://localhost:8080/docs/native/secure-storage/) for more supported platforms.\n",
+    "description": "\nGet and set data in the iOS Keychain\n\nRequires Cordova plugin: `cordova-plugin-ios-keychain`. For more info, please see the [Keychain plugin docs](http://localhost:8080/git/cordova-plugin-ios-keychain).\n\nSee also [Secure Storage](http://localhost:8080/docs/native/secure-storage/) for more supported platforms.\n",
     "usage": "\n```typescript\nimport { Keychain } from '@awesome-cordova-plugins/keychain/ngx';\n\nconstructor(private keychain: Keychain) { }\n\n...\n\nthis.keychain.set(key, value).then(() => {\n  this.keychain.get(key)\n    .then(value => console.log('Got value', value))\n    .catch(err => console.error('Error getting', err));\n})\n.catch(err => console.error('Error setting', err));\n```\n",
     "platforms": [
       "iOS"
     ],
-    "repo": "https://github.com/ionic-team/cordova-plugin-ios-keychain",
+    "repo": "http://localhost:8080/git/cordova-plugin-ios-keychain",
     "cordovaPlugin": {
       "name": "cordova-plugin-ios-keychain"
     }
@@ -1839,7 +1839,7 @@
     "packageName": "@awesome-cordova-plugins/media",
     "displayName": "Media",
     "description": "\nThis plugin provides the ability to record and play back audio files on a device.\n",
-    "usage": "\n```typescript\nimport { Media, MediaObject } from '@awesome-cordova-plugins/media/ngx';\n\n\nconstructor(private media: Media) { }\n\n\n...\n\n\n// Create a Media instance.  Expects path to file or url as argument\n// We can optionally pass a second argument to track the status of the media\n\nconst file: MediaObject = this.media.create('file.mp3');\n\n// to listen to plugin events:\n\nfile.onStatusUpdate.subscribe(status => console.log(status)); // fires when file status changes\n\nfile.onSuccess.subscribe(() => console.log('Action is successful'));\n\nfile.onError.subscribe(error => console.log('Error!', error));\n\n// play the file\nfile.play();\n\n// pause the file\nfile.pause();\n\n// get current playback position\nfile.getCurrentPosition().then((position) => {\n  console.log(position);\n});\n\n// get file duration\nlet duration = file.getDuration();\nconsole.log(duration);\n\n// skip to 10 seconds (expects int value in ms)\nfile.seekTo(10000);\n\n// stop playing the file\nfile.stop();\n\n// release the native audio resource\n// Platform Quirks:\n// iOS simply create a new instance and the old one will be overwritten\n// Android you must call release() to destroy instances of media when you are done\nfile.release();\n\n\n\n// Recording to a file\nconst file: MediaObject = this.media.create('path/to/file.mp3');\n\nfile.startRecord();\n\nfile.stopRecord();\n\n\n```\n\nSome hints if you are using iOS and recording doesn't work:\n1.) Try to use a absolute file path but remove beginning \"file://\".\nThen it looks like: `/var/mobile/Containers/Data/Application/AF438B8B-7724-4FBB-8E69-083463224FC4/tmp/my_file.m4a`\nExample: `this.media.create(this.file.tempDirectory.replace(/^file:\\/\\//, '') + 'my_file.m4a')`\n2.) If that's not working, too, create the file before using.\nExample:\n```typescript\nimport { Media, MediaObject } from '@awesome-cordova-plugins/media/ngx';\nimport { File } from '@awesome-cordova-plugins/file/ngx';\n\n...\n\nconstructor(private media: Media, private file: File) { }\n\n...\n\nthis.file.createFile(this.file.tempDirectory, 'my_file.m4a', true).then(() => {\n  let file = this.media.create(this.file.tempDirectory.replace(/^file:\\/\\//, '') + 'my_file.m4a');\n  file.startRecord();\n  window.setTimeout(() => file.stopRecord(), 10000);\n});\n```\n\nYou can find the reasons here: https://github.com/ionic-team/ionic-native/issues/1452#issuecomment-299605906",
+    "usage": "\n```typescript\nimport { Media, MediaObject } from '@awesome-cordova-plugins/media/ngx';\n\n\nconstructor(private media: Media) { }\n\n\n...\n\n\n// Create a Media instance.  Expects path to file or url as argument\n// We can optionally pass a second argument to track the status of the media\n\nconst file: MediaObject = this.media.create('file.mp3');\n\n// to listen to plugin events:\n\nfile.onStatusUpdate.subscribe(status => console.log(status)); // fires when file status changes\n\nfile.onSuccess.subscribe(() => console.log('Action is successful'));\n\nfile.onError.subscribe(error => console.log('Error!', error));\n\n// play the file\nfile.play();\n\n// pause the file\nfile.pause();\n\n// get current playback position\nfile.getCurrentPosition().then((position) => {\n  console.log(position);\n});\n\n// get file duration\nlet duration = file.getDuration();\nconsole.log(duration);\n\n// skip to 10 seconds (expects int value in ms)\nfile.seekTo(10000);\n\n// stop playing the file\nfile.stop();\n\n// release the native audio resource\n// Platform Quirks:\n// iOS simply create a new instance and the old one will be overwritten\n// Android you must call release() to destroy instances of media when you are done\nfile.release();\n\n\n\n// Recording to a file\nconst file: MediaObject = this.media.create('path/to/file.mp3');\n\nfile.startRecord();\n\nfile.stopRecord();\n\n\n```\n\nSome hints if you are using iOS and recording doesn't work:\n1.) Try to use a absolute file path but remove beginning \"file://\".\nThen it looks like: `/var/mobile/Containers/Data/Application/AF438B8B-7724-4FBB-8E69-083463224FC4/tmp/my_file.m4a`\nExample: `this.media.create(this.file.tempDirectory.replace(/^file:\\/\\//, '') + 'my_file.m4a')`\n2.) If that's not working, too, create the file before using.\nExample:\n```typescript\nimport { Media, MediaObject } from '@awesome-cordova-plugins/media/ngx';\nimport { File } from '@awesome-cordova-plugins/file/ngx';\n\n...\n\nconstructor(private media: Media, private file: File) { }\n\n...\n\nthis.file.createFile(this.file.tempDirectory, 'my_file.m4a', true).then(() => {\n  let file = this.media.create(this.file.tempDirectory.replace(/^file:\\/\\//, '') + 'my_file.m4a');\n  file.startRecord();\n  window.setTimeout(() => file.stopRecord(), 10000);\n});\n```\n\nYou can find the reasons here: http://localhost:8080/git/issues/1452#issuecomment-299605906",
     "platforms": [
       "Android",
       "Browser",

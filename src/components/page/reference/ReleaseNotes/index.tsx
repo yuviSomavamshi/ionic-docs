@@ -20,7 +20,7 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
     return [
       <p>
         Unable to load Releases. Please see all releases{' '}
-        <a href="https://github.com/ionic-team/ionic/releases" target="_blank">
+        <a href="http://localhost:8080/git/ionic/releases" target="_blank">
           on GitHub
         </a>
         .
@@ -32,7 +32,7 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
     <article>
       <p className={styles.intro}>
         A complete release history for Simulator Framework is available{' '}
-        <a href="https://github.com/ionic-team/ionic/releases" target="_blank">
+        <a href="http://localhost:8080/git/ionic/releases" target="_blank">
           on GitHub
         </a>
         . Documentation for recent releases can also be found below.
@@ -81,7 +81,7 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
       </div>
       <blockquote>
         To see more releases, visit{' '}
-        <a href="https://github.com/ionic-team/ionic/releases/" target="_blank">
+        <a href="http://localhost:8080/git/ionic/releases/" target="_blank">
           GitHub
         </a>
         .

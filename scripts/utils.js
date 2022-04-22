@@ -7,7 +7,7 @@ function renderMarkdown(markdownString) {
 }
 
 // a String equivalent to this component
-// https://github.com/ionic-team/ionic-docs/blob/master/src/components/reference/reference.tsx
+// http://localhost:8080/git/blob/master/src/components/reference/reference.tsx
 function renderReference(data, methodKeys) {
   return `
 <table className="reference-table">
@@ -45,7 +45,7 @@ function renderReference(data, methodKeys) {
 }
 
 // a String equivalent to this functional component
-// https://github.com/ionic-team/ionic-docs/blob/master/src/components/page/templates/cli.tsx#L146-L157
+// http://localhost:8080/git/blob/master/src/components/page/templates/cli.tsx#L146-L157
 function renderOptionSpec(option) {
   return `
 <a href="#option-${option.name}" id="option-${option.name}">

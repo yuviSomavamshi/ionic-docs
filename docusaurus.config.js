@@ -19,7 +19,7 @@ module.exports = {
   },
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/meta/favicon-96x96.png',
+  favicon: 'logos/simulator-logo.svg',
   organizationName: 'simulator-team',
   projectName: 'simulator-docs',
   themeConfig: {
@@ -29,13 +29,13 @@ module.exports = {
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: 'Site Logo',
-        src: `/logos/ionic-text-docs-dark.svg`,
-        srcDark: `/logos/ionic-text-docs-light.svg`,
+        alt: 'Simulator Logo',
+        src: `/logos/simulator-logo.svg`,
+        srcDark: `/logos/simulator-logo.svg`,
         href: '/',
         target: '_self',
-        width: 139,
-        height: 28,
+        width: 30,
+        height: 30,
       },
       items: [
         {
@@ -88,18 +88,18 @@ module.exports = {
             return 'https://crowdin.com/project/ionic-docs';
           }
           if ((match = docPath.match(/api\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-framework/edit/main/core/src/components/${match[1]}/readme.md`;
+            return `http://localhost:8080/git/edit/main/core/src/components/${match[1]}/readme.md`;
           }
           if ((match = docPath.match(/cli\/commands\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-cli/edit/develop/packages/@ionic/cli/src/commands/${match[1].replace(
+            return `http://localhost:8080/git/edit/develop/packages/@ionic/cli/src/commands/${match[1].replace(
               '-',
               '/'
             )}.ts`;
           }
           if ((match = docPath.match(/native\/(.*)\.md/)) != null) {
-            return `https://github.com/ionic-team/ionic-native/edit/master/src/@awesome-cordova-plugins/plugins/${match[1]}/index.ts`;
+            return `http://localhost:8080/git/edit/master/src/@awesome-cordova-plugins/plugins/${match[1]}/index.ts`;
           }
-          return `https://github.com/ionic-team/ionic-docs/edit/main/${versionDocsDirPath}/${docPath}`;
+          return `http://localhost:8080/git/edit/main/${versionDocsDirPath}/${docPath}`;
         },
         exclude: ['README.md'],
         lastVersion: 'current',

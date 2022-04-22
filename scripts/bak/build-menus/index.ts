@@ -17,7 +17,7 @@ const nativePluginMenu = keyBy(
 );
 
 const externalNativePlugins = {
-  'Google Maps': 'https://github.com/ionic-team/ionic-native-google-maps'
+  'Google Maps': 'http://localhost:8080/git-google-maps'
 };
 
 const tasks = new Listr([

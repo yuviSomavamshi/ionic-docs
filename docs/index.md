@@ -5,7 +5,7 @@ slug: /
 image: /img/meta/open-graph.png
 hide_table_of_contents: true
 demoUrl: https://docs-demo.ionic.io/
-demoSourceUrl: https://github.com/ionic-team/docs-demo
+demoSourceUrl: http://localhost:8080/git/docs-demo
 ---
 
 import DocsCard from '@components/global/DocsCard';
@@ -120,4 +120,4 @@ The official [Simulator CLI](cli), or Command Line Interface, is a tool that qui
 
 The Simulator UI Toolkit is a free and open source project, released under the permissable <a href="https://opensource.org/licenses/MIT" target="_blank">MIT license</a>. This means it can be used in personal or commercial projects for free. MIT is the same license used by such popular projects as jQuery and Ruby on Rails.
 
-This documentation content (found in the <a href="https://github.com/ionic-team/ionic-docs" target="_blank">ionic-docs</a> repo) is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2 license</a>.
+This documentation content (found in the <a href="http://localhost:8080/git" target="_blank">ionic-docs</a> repo) is licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2 license</a>.
