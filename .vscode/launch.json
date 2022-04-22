@@ -8,13 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Prerender",
-      "args": [
-        "${workspaceFolder}/node_modules/.bin/stencil",
-        "build",
-        "--debug",
-        "--prerender",
-        "--max-workers=1"
-      ],
+      "args": ["${workspaceFolder}/node_modules/.bin/stencil", "build", "--debug", "--prerender", "--max-workers=1"],
       "protocol": "inspector"
     }
   ]

@@ -15,7 +15,8 @@
     "serve": "docusaurus serve",
     "prestart": "npm run generate-markdown",
     "start": "docusaurus start",
-    "swizzle": "docusaurus swizzle --danger"
+    "swizzle": "docusaurus swizzle --danger",
+    "format": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json,html,ts,tsx,css}\""
   },
   "browserslist": {
     "production": [
