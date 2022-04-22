@@ -1,6 +1,6 @@
-# Ionic Docs
+# Simulator Docs
 
-The official [Ionic](https://ionicframework.com) documentation, built with [Docusaurus](https://docusaurus.io/).
+The official [Simulator](http://localhost:8080) documentation, built with [Docusaurus](https://docusaurus.io/).
 
 [![Crowdin](https://badges.crowdin.net/ionic-docs/localized.svg)](https://crowdin.com/project/ionic-docs)
 

@@ -6,13 +6,13 @@
   "groups": [],
   "commands": [
     {
-      "name": "ionic build",
+      "name": "Simulator build",
       "namespace": ["ionic"],
       "summary": "Build web assets and prepare your app for any platform targets",
-      "description": "`ionic build` will perform an Ionic build, which compiles web assets and prepares them for deployment.\n\n`ionic build` uses the Angular CLI. Use `ng build --help` to list all Angular CLI options for building your app. See the `ng build` [docs](https://angular.io/cli/build) for explanations. Options not listed below are considered advanced and can be passed to the `ng` CLI using the `--` separator after the Ionic CLI arguments. See the examples.",
+      "description": "`Simulator build` will perform an Simulator build, which compiles web assets and prepares them for deployment.\n\n`Simulator build` uses the Angular CLI. Use `ng build --help` to list all Angular CLI options for building your app. See the `ng build` [docs](https://angular.io/cli/build) for explanations. Options not listed below are considered advanced and can be passed to the `ng` CLI using the `--` separator after the Simulator CLI arguments. See the examples.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic build ", "ionic build --prod", "ionic build --watch"],
+      "exampleCommands": ["Simulator build ", "Simulator build --prod", "Simulator build --watch"],
       "aliases": [],
       "inputs": [],
       "options": [
@@ -80,10 +80,10 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor add",
+      "name": "Simulator capacitor add",
       "namespace": ["ionic", "capacitor"],
-      "summary": "Add a native platform to your Ionic project",
-      "description": "`ionic capacitor add` will do the following:\n- Install the Capacitor platform package\n- Copy the native platform template into your project",
+      "summary": "Add a native platform to your Simulator project",
+      "description": "`Simulator capacitor add` will do the following:\n- Install the Capacitor platform package\n- Copy the native platform template into your project",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -99,13 +99,13 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor build",
+      "name": "Simulator capacitor build",
       "namespace": ["ionic", "capacitor"],
-      "summary": "Build an Ionic project for a given platform",
-      "description": "`ionic capacitor build` will do the following:\n- Perform `ionic build`\n- Copy web assets into the specified native platform\n- Open the IDE for your native project (Xcode for iOS, Android Studio for Android)\n\nOnce the web assets and configuration are copied into your native project, you can build your app using the native IDE. Unfortunately, programmatically building the native project is not yet supported.\n\nTo configure your native project, see the common configuration [docs](https://capacitor.ionicframework.com/docs/basics/configuring-your-app) as well as low-level configuration for [iOS](https://capacitor.ionicframework.com/docs/ios/configuration) and [Android](https://capacitor.ionicframework.com/docs/android/configuration).",
+      "summary": "Build an Simulator project for a given platform",
+      "description": "`Simulator capacitor build` will do the following:\n- Perform `Simulator build`\n- Copy web assets into the specified native platform\n- Open the IDE for your native project (Xcode for iOS, Android Studio for Android)\n\nOnce the web assets and configuration are copied into your native project, you can build your app using the native IDE. Unfortunately, programmatically building the native project is not yet supported.\n\nTo configure your native project, see the common configuration [docs](https://capacitor.ionicframework.com/docs/basics/configuring-your-app) as well as low-level configuration for [iOS](https://capacitor.ionicframework.com/docs/ios/configuration) and [Android](https://capacitor.ionicframework.com/docs/android/configuration).",
       "footnotes": [],
       "groups": ["beta"],
-      "exampleCommands": ["ionic capacitor build ", "ionic capacitor build android", "ionic capacitor build ios"],
+      "exampleCommands": ["Simulator capacitor build ", "Simulator capacitor build android", "Simulator capacitor build ios"],
       "aliases": [],
       "inputs": [
         {
@@ -118,7 +118,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke Ionic build",
+          "summary": "Do not invoke Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -181,10 +181,10 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor copy",
+      "name": "Simulator capacitor copy",
       "namespace": ["ionic", "capacitor"],
       "summary": "Copy web assets to native platforms",
-      "description": "`ionic capacitor copy` will do the following:\n- Perform an Ionic build, which compiles web assets\n- Copy web assets to Capacitor native platform(s)",
+      "description": "`Simulator capacitor copy` will do the following:\n- Perform an Simulator build, which compiles web assets\n- Copy web assets to Capacitor native platform(s)",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -200,7 +200,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke an Ionic build",
+          "summary": "Do not invoke an Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -252,10 +252,10 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor open",
+      "name": "Simulator capacitor open",
       "namespace": ["ionic", "capacitor"],
       "summary": "Open the IDE for a given native platform project",
-      "description": "`ionic capacitor open` will do the following:\n- Open the IDE for your native project (Xcode for iOS, Android Studio for Android)",
+      "description": "`Simulator capacitor open` will do the following:\n- Open the IDE for your native project (Xcode for iOS, Android Studio for Android)",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -271,18 +271,18 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor run",
+      "name": "Simulator capacitor run",
       "namespace": ["ionic", "capacitor"],
-      "summary": "Run an Ionic project on a connected device",
-      "description": "`ionic capacitor run` will do the following:\n- Perform `ionic build` (or run the dev server from `ionic serve` with the `--livereload` option)\n- Run `capacitor run` (or open IDE for your native project with the `--open` option)\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](https://ionicframework.com/docs/cli/livereload) for more information.\n\nIf you have multiple devices and emulators, you can target a specific one by ID with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](https://ionicframework.com/docs/developer-resources/developer-tips).",
+      "summary": "Run an Simulator project on a connected device",
+      "description": "`Simulator capacitor run` will do the following:\n- Perform `Simulator build` (or run the dev server from `Simulator serve` with the `--livereload` option)\n- Run `capacitor run` (or open IDE for your native project with the `--open` option)\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](http://localhost:8080/docs/cli/livereload) for more information.\n\nIf you have multiple devices and emulators, you can target a specific one by ID with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](http://localhost:8080/docs/developer-resources/developer-tips).",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic capacitor run ",
-        "ionic capacitor run android",
-        "ionic capacitor run android -l --external",
-        "ionic capacitor run ios --livereload --external",
-        "ionic capacitor run ios --livereload-url=http://localhost:8100"
+        "Simulator capacitor run ",
+        "Simulator capacitor run android",
+        "Simulator capacitor run android -l --external",
+        "Simulator capacitor run ios --livereload --external",
+        "Simulator capacitor run ios --livereload-url=http://localhost:8100"
       ],
       "aliases": [],
       "inputs": [
@@ -326,7 +326,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke Ionic build",
+          "summary": "Do not invoke Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -440,10 +440,10 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor sync",
+      "name": "Simulator capacitor sync",
       "namespace": ["ionic", "capacitor"],
-      "summary": "Sync (copy + update) an Ionic project",
-      "description": "`ionic capacitor sync` will do the following:\n- Perform an Ionic build, which compiles web assets\n- Copy web assets to Capacitor native platform(s)\n- Update Capacitor native platform(s) and dependencies\n- Install any discovered Capacitor or Cordova plugins",
+      "summary": "Sync (copy + update) an Simulator project",
+      "description": "`Simulator capacitor sync` will do the following:\n- Perform an Simulator build, which compiles web assets\n- Copy web assets to Capacitor native platform(s)\n- Update Capacitor native platform(s) and dependencies\n- Install any discovered Capacitor or Cordova plugins",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -459,7 +459,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke an Ionic build",
+          "summary": "Do not invoke an Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -511,10 +511,10 @@
       "type": "project"
     },
     {
-      "name": "ionic capacitor update",
+      "name": "Simulator capacitor update",
       "namespace": ["ionic", "capacitor"],
       "summary": "Update Capacitor native platforms, install Capacitor/Cordova plugins",
-      "description": "`ionic capacitor update` will do the following:\n- Update Capacitor native platform(s) and dependencies\n- Install any discovered Capacitor or Cordova plugins",
+      "description": "`Simulator capacitor update` will do the following:\n- Update Capacitor native platform(s) and dependencies\n- Install any discovered Capacitor or Cordova plugins",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -530,30 +530,30 @@
       "type": "project"
     },
     {
-      "name": "ionic completion",
+      "name": "Simulator completion",
       "namespace": ["ionic"],
-      "summary": "Enables tab-completion for Ionic CLI commands.",
-      "description": "This command is experimental and only works for Z shell (zsh) and non-Windows platforms.\n\nTo enable completions for the Ionic CLI, you can add the completion code that this command prints to your **~/.zshrc** (or any other file loaded with your shell). See the examples.",
+      "summary": "Enables tab-completion for Simulator CLI commands.",
+      "description": "This command is experimental and only works for Z shell (zsh) and non-Windows platforms.\n\nTo enable completions for the Simulator CLI, you can add the completion code that this command prints to your **~/.zshrc** (or any other file loaded with your shell). See the examples.",
       "footnotes": [],
       "groups": ["experimental"],
-      "exampleCommands": ["ionic completion ", "ionic completion >> ~/.zshrc"],
+      "exampleCommands": ["Simulator completion ", "Simulator completion >> ~/.zshrc"],
       "aliases": [],
       "inputs": [],
       "options": [],
       "type": "global"
     },
     {
-      "name": "ionic config get",
+      "name": "Simulator config get",
       "namespace": ["ionic", "config"],
       "summary": "Print config values",
       "description": "This command reads and prints configuration values from the project's **./ionic.config.json** file. It can also operate on the global CLI configuration (**~/.ionic/config.json**) using the `--global` option.\n\nFor nested properties, separate nest levels with dots. For example, the property name `integrations.cordova` will look in the **integrations** object for the **cordova** property.\n\nWithout a `property` argument, this command prints out the entire config.\n\nFor multi-app projects, this command is scoped to the current project by default. To operate at the root of the project configuration file instead, use the `--root` option.\n\nIf you are using this command programmatically, you can use the `--json` option.\n\nThis command will sanitize config output for known sensitive fields (disabled when using `--json`).",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic config get ",
-        "ionic config get id",
-        "ionic config get --global user.email",
-        "ionic config get -g npmClient"
+        "Simulator config get ",
+        "Simulator config get id",
+        "Simulator config get --global user.email",
+        "Simulator config get -g npmClient"
       ],
       "aliases": [],
       "inputs": [
@@ -598,16 +598,16 @@
       "type": "global"
     },
     {
-      "name": "ionic config set",
+      "name": "Simulator config set",
       "namespace": ["ionic", "config"],
       "summary": "Set config values",
       "description": "This command writes configuration values to the project's **./ionic.config.json** file. It can also operate on the global CLI configuration (**~/.ionic/config.json**) using the `--global` option.\n\nFor nested properties, separate nest levels with dots. For example, the property name `integrations.cordova` will look in the **integrations** object for the **cordova** property.\n\nFor multi-app projects, this command is scoped to the current project by default. To operate at the root of the project configuration file instead, use the `--root` option.\n\nThis command will attempt to coerce `value` into a suitable JSON type. If it is JSON-parsable, such as `123`, `true`, `[]`, etc., then it takes the parsed result. Otherwise, the value is interpreted as a string. For stricter input, use `--json`, which will error with non-JSON values.\n\nBy default, if `property` exists and is an object or an array, the value is not overwritten. To disable this check and always overwrite the property, use `--force`.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic config set name newAppName",
-        "ionic config set name \"\\\"newAppName\\\"\" --json",
-        "ionic config set -g interactive false"
+        "Simulator config set name newAppName",
+        "Simulator config set name \"\\\"newAppName\\\"\" --json",
+        "Simulator config set -g interactive false"
       ],
       "aliases": [],
       "inputs": [
@@ -667,19 +667,19 @@
       "type": "global"
     },
     {
-      "name": "ionic config unset",
+      "name": "Simulator config unset",
       "namespace": ["ionic", "config"],
       "summary": "Delete config values",
       "description": "This command deletes configuration values from the project's **./ionic.config.json** file. It can also operate on the global CLI configuration (**~/.ionic/config.json**) using the `--global` option.\n\nFor nested properties, separate nest levels with dots. For example, the property name `integrations.cordova` will look in the **integrations** object for the **cordova** property.\n\nFor multi-app projects, this command is scoped to the current project by default. To operate at the root of the project configuration file instead, use the `--root` option.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic config unset ",
-        "ionic config unset type",
-        "ionic config unset --global git.setup",
-        "ionic config unset -g interactive"
+        "Simulator config unset ",
+        "Simulator config unset type",
+        "Simulator config unset --global git.setup",
+        "Simulator config unset -g interactive"
       ],
-      "aliases": ["ionic config delete", "ionic config del"],
+      "aliases": ["Simulator config delete", "Simulator config del"],
       "inputs": [
         {
           "name": "property",
@@ -712,25 +712,25 @@
       "type": "global"
     },
     {
-      "name": "ionic cordova build",
+      "name": "Simulator cordova build",
       "namespace": ["ionic", "cordova"],
       "summary": "Use Cordova to build for Android and iOS platform targets",
-      "description": "Like running `cordova build` directly, `ionic cordova build` also builds web assets from `ionic build` and provides friendly checks for Android and iOS platforms.\n\nTo pass additional options to the Cordova CLI, use the `--` separator after the Ionic CLI arguments.\n\nThe Cordova CLI requires a separator for platform-specific arguments for Android [builds](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#using-flags), so an additional separator is required for the Ionic CLI, but it is not required for iOS [builds](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#using-flags). See the example commands for usage with separators. To avoid using flags, consider using `--buildConfig` with a **build.json** file.",
+      "description": "Like running `cordova build` directly, `Simulator cordova build` also builds web assets from `Simulator build` and provides friendly checks for Android and iOS platforms.\n\nTo pass additional options to the Cordova CLI, use the `--` separator after the Simulator CLI arguments.\n\nThe Cordova CLI requires a separator for platform-specific arguments for Android [builds](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html#using-flags), so an additional separator is required for the Simulator CLI, but it is not required for iOS [builds](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html#using-flags). See the example commands for usage with separators. To avoid using flags, consider using `--buildConfig` with a **build.json** file.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova build android",
-        "ionic cordova build android --buildConfig=build.json",
-        "ionic cordova build android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
-        "ionic cordova build android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
-        "ionic cordova build android --prod --release -- -- --minSdkVersion=21",
-        "ionic cordova build android --prod --release -- -- --versionCode=55",
-        "ionic cordova build android --prod --release --buildConfig=build.json",
-        "ionic cordova build ios",
-        "ionic cordova build ios --buildConfig=build.json",
-        "ionic cordova build ios --prod --release",
-        "ionic cordova build ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
-        "ionic cordova build ios --prod --release --buildConfig=build.json"
+        "Simulator cordova build android",
+        "Simulator cordova build android --buildConfig=build.json",
+        "Simulator cordova build android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
+        "Simulator cordova build android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
+        "Simulator cordova build android --prod --release -- -- --minSdkVersion=21",
+        "Simulator cordova build android --prod --release -- -- --versionCode=55",
+        "Simulator cordova build android --prod --release --buildConfig=build.json",
+        "Simulator cordova build ios",
+        "Simulator cordova build ios --buildConfig=build.json",
+        "Simulator cordova build ios --prod --release",
+        "Simulator cordova build ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
+        "Simulator cordova build ios --prod --release --buildConfig=build.json"
       ],
       "aliases": [],
       "inputs": [
@@ -744,7 +744,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke an Ionic build",
+          "summary": "Do not invoke an Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -836,16 +836,16 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova compile",
+      "name": "Simulator cordova compile",
       "namespace": ["ionic", "cordova"],
       "summary": "Compile native platform code",
       "description": "Like running `cordova compile` directly, but provides friendly checks.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova compile ios",
-        "ionic cordova compile ios --device",
-        "ionic cordova compile android"
+        "Simulator cordova compile ios",
+        "Simulator cordova compile ios --device",
+        "Simulator cordova compile android"
       ],
       "aliases": [],
       "inputs": [
@@ -910,28 +910,28 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova emulate",
+      "name": "Simulator cordova emulate",
       "namespace": ["ionic", "cordova"],
-      "summary": "Emulate an Ionic project on a simulator/emulator",
-      "description": "Build your app and deploy it to devices and emulators using this command. Optionally specify the `--livereload` option to use the dev server from `ionic serve` for livereload functionality.\n\nThis command will first use `ionic build` to build web assets (or `ionic serve` with the `--livereload` option). Then, `cordova build` is used to compile and prepare your app. Finally, the `native-run` [utility](https://github.com/ionic-team/native-run) is used to run your app on a device. To use Cordova for this process instead, use the `--no-native-run` option.\n\nIf you have multiple devices and emulators, you can target a specific one with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](https://ionicframework.com/docs/developer-resources/developer-tips).\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](https://ionicframework.com/docs/cli/livereload) for more information.\n\nJust like with `ionic cordova build`, you can pass additional options to the Cordova CLI using the `--` separator. To pass additional options to the dev server, consider using `ionic serve` separately and using the `--livereload-url` option.",
+      "summary": "Emulate an Simulator project on a simulator/emulator",
+      "description": "Build your app and deploy it to devices and emulators using this command. Optionally specify the `--livereload` option to use the dev server from `Simulator serve` for livereload functionality.\n\nThis command will first use `Simulator build` to build web assets (or `Simulator serve` with the `--livereload` option). Then, `cordova build` is used to compile and prepare your app. Finally, the `native-run` [utility](https://github.com/ionic-team/native-run) is used to run your app on a device. To use Cordova for this process instead, use the `--no-native-run` option.\n\nIf you have multiple devices and emulators, you can target a specific one with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](http://localhost:8080/docs/developer-resources/developer-tips).\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](http://localhost:8080/docs/cli/livereload) for more information.\n\nJust like with `Simulator cordova build`, you can pass additional options to the Cordova CLI using the `--` separator. To pass additional options to the dev server, consider using `Simulator serve` separately and using the `--livereload-url` option.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova emulate android",
-        "ionic cordova emulate android --buildConfig=build.json",
-        "ionic cordova emulate android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
-        "ionic cordova emulate android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
-        "ionic cordova emulate android --prod --release -- -- --minSdkVersion=21",
-        "ionic cordova emulate android --prod --release -- -- --versionCode=55",
-        "ionic cordova emulate android --prod --release --buildConfig=build.json",
-        "ionic cordova emulate android -l",
-        "ionic cordova emulate ios",
-        "ionic cordova emulate ios --buildConfig=build.json",
-        "ionic cordova emulate ios --livereload --external",
-        "ionic cordova emulate ios --livereload-url=http://localhost:8100",
-        "ionic cordova emulate ios --prod --release",
-        "ionic cordova emulate ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
-        "ionic cordova emulate ios --prod --release --buildConfig=build.json"
+        "Simulator cordova emulate android",
+        "Simulator cordova emulate android --buildConfig=build.json",
+        "Simulator cordova emulate android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
+        "Simulator cordova emulate android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
+        "Simulator cordova emulate android --prod --release -- -- --minSdkVersion=21",
+        "Simulator cordova emulate android --prod --release -- -- --versionCode=55",
+        "Simulator cordova emulate android --prod --release --buildConfig=build.json",
+        "Simulator cordova emulate android -l",
+        "Simulator cordova emulate ios",
+        "Simulator cordova emulate ios --buildConfig=build.json",
+        "Simulator cordova emulate ios --livereload --external",
+        "Simulator cordova emulate ios --livereload-url=http://localhost:8100",
+        "Simulator cordova emulate ios --prod --release",
+        "Simulator cordova emulate ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
+        "Simulator cordova emulate ios --prod --release --buildConfig=build.json"
       ],
       "aliases": [],
       "inputs": [
@@ -985,7 +985,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke Ionic build",
+          "summary": "Do not invoke Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -1180,19 +1180,19 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova platform",
+      "name": "Simulator cordova platform",
       "namespace": ["ionic", "cordova"],
       "summary": "Manage Cordova platform targets",
-      "description": "Like running `cordova platform` directly, but adds default Ionic icons and splash screen resources (during `add`) and provides friendly checks.",
+      "description": "Like running `cordova platform` directly, but adds default Simulator icons and splash screen resources (during `add`) and provides friendly checks.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova platform ",
-        "ionic cordova platform add ios",
-        "ionic cordova platform add android",
-        "ionic cordova platform rm ios"
+        "Simulator cordova platform ",
+        "Simulator cordova platform add ios",
+        "Simulator cordova platform add android",
+        "Simulator cordova platform rm ios"
       ],
-      "aliases": ["ionic cordova platforms"],
+      "aliases": ["Simulator cordova platforms"],
       "inputs": [
         {
           "name": "action",
@@ -1221,19 +1221,19 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova plugin",
+      "name": "Simulator cordova plugin",
       "namespace": ["ionic", "cordova"],
       "summary": "Manage Cordova plugins",
       "description": "Like running `cordova plugin` directly, but provides friendly checks.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova plugin ",
-        "ionic cordova plugin add cordova-plugin-inappbrowser@latest",
-        "ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=XXXXX",
-        "ionic cordova plugin rm cordova-plugin-camera"
+        "Simulator cordova plugin ",
+        "Simulator cordova plugin add cordova-plugin-inappbrowser@latest",
+        "Simulator cordova plugin add phonegap-plugin-push --variable SENDER_ID=XXXXX",
+        "Simulator cordova plugin rm cordova-plugin-camera"
       ],
-      "aliases": ["ionic cordova plugins"],
+      "aliases": ["Simulator cordova plugins"],
       "inputs": [
         {
           "name": "action",
@@ -1271,13 +1271,13 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova prepare",
+      "name": "Simulator cordova prepare",
       "namespace": ["ionic", "cordova"],
       "summary": "Copies assets to Cordova platforms, preparing them for native builds",
-      "description": "`ionic cordova prepare` will do the following:\n\n- Perform an Ionic build, which compiles web assets to **www/**.\n- Copy the **www/** directory into your Cordova platforms.\n- Transform **config.xml** into platform-specific manifest files.\n- Copy icons and splash screens from **resources/** to into your Cordova platforms.\n- Copy plugin files into specified platforms.\n\nYou may wish to use `ionic cordova prepare` if you run your project with Android Studio or Xcode.",
+      "description": "`Simulator cordova prepare` will do the following:\n\n- Perform an Simulator build, which compiles web assets to **www/**.\n- Copy the **www/** directory into your Cordova platforms.\n- Transform **config.xml** into platform-specific manifest files.\n- Copy icons and splash screens from **resources/** to into your Cordova platforms.\n- Copy plugin files into specified platforms.\n\nYou may wish to use `Simulator cordova prepare` if you run your project with Android Studio or Xcode.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic cordova prepare ", "ionic cordova prepare ios", "ionic cordova prepare android"],
+      "exampleCommands": ["Simulator cordova prepare ", "Simulator cordova prepare ios", "Simulator cordova prepare android"],
       "aliases": [],
       "inputs": [
         {
@@ -1290,7 +1290,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke an Ionic build",
+          "summary": "Do not invoke an Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -1342,7 +1342,7 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova requirements",
+      "name": "Simulator cordova requirements",
       "namespace": ["ionic", "cordova"],
       "summary": "Checks and print out all the requirements for platforms",
       "description": "Like running `cordova requirements` directly, but provides friendly checks.",
@@ -1361,14 +1361,14 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova resources",
+      "name": "Simulator cordova resources",
       "namespace": ["ionic", "cordova"],
       "summary": "Automatically create icon and splash screen resources",
-      "description": "Generate perfectly sized icons and splash screens from PNG source images for your Cordova platforms with this command.\n\nThe source image for icons should ideally be at least **1024×1024px** and located at **resources/icon.png**. The source image for splash screens should ideally be at least **2732×2732px** and located at **resources/splash.png**. If you used `ionic start`, there should already be default Ionic resources in the **resources/** directory, which you can overwrite.\n\nYou can also generate platform-specific icons and splash screens by placing them in the respective **resources/&lt;platform&gt;/** directory. For example, to generate an icon for Android, place your image at **resources/android/icon.png**.\n\nFor best results, the splash screen's artwork should roughly fit within a square (**1200×1200px**) at the center of the image. You can use **[https://code.ionicframework.com/resources/splash.psd](https://code.ionicframework.com/resources/splash.psd)** as a template for your splash screen.\n\n`ionic cordova resources` will automatically update your **config.xml** to reflect the changes in the generated images, which Cordova then configures.\n\nThis command uses the `cordova-res` [utility](https://github.com/ionic-team/cordova-res) to generate resources locally.\n\nCordova reference documentation:\n- Icons: **[https://cordova.apache.org/docs/en/latest/config_ref/images.html](https://cordova.apache.org/docs/en/latest/config_ref/images.html)**\n- Splash Screens: **[https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/)**",
+      "description": "Generate perfectly sized icons and splash screens from PNG source images for your Cordova platforms with this command.\n\nThe source image for icons should ideally be at least **1024×1024px** and located at **resources/icon.png**. The source image for splash screens should ideally be at least **2732×2732px** and located at **resources/splash.png**. If you used `Simulator start`, there should already be default Simulator resources in the **resources/** directory, which you can overwrite.\n\nYou can also generate platform-specific icons and splash screens by placing them in the respective **resources/&lt;platform&gt;/** directory. For example, to generate an icon for Android, place your image at **resources/android/icon.png**.\n\nFor best results, the splash screen's artwork should roughly fit within a square (**1200×1200px**) at the center of the image. You can use **[https://code.ionicframework.com/resources/splash.psd](https://code.ionicframework.com/resources/splash.psd)** as a template for your splash screen.\n\n`Simulator cordova resources` will automatically update your **config.xml** to reflect the changes in the generated images, which Cordova then configures.\n\nThis command uses the `cordova-res` [utility](https://github.com/ionic-team/cordova-res) to generate resources locally.\n\nCordova reference documentation:\n- Icons: **[https://cordova.apache.org/docs/en/latest/config_ref/images.html](https://cordova.apache.org/docs/en/latest/config_ref/images.html)**\n- Splash Screens: **[https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/)**",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic cordova resources ", "ionic cordova resources ios", "ionic cordova resources android"],
-      "aliases": ["ionic cordova res"],
+      "exampleCommands": ["Simulator cordova resources ", "Simulator cordova resources ios", "Simulator cordova resources android"],
+      "aliases": ["Simulator cordova res"],
       "inputs": [
         {
           "name": "platform",
@@ -1401,28 +1401,28 @@
       "type": "project"
     },
     {
-      "name": "ionic cordova run",
+      "name": "Simulator cordova run",
       "namespace": ["ionic", "cordova"],
-      "summary": "Run an Ionic project on a connected device",
-      "description": "Build your app and deploy it to devices and emulators using this command. Optionally specify the `--livereload` option to use the dev server from `ionic serve` for livereload functionality.\n\nThis command will first use `ionic build` to build web assets (or `ionic serve` with the `--livereload` option). Then, `cordova build` is used to compile and prepare your app. Finally, the `native-run` [utility](https://github.com/ionic-team/native-run) is used to run your app on a device. To use Cordova for this process instead, use the `--no-native-run` option.\n\nIf you have multiple devices and emulators, you can target a specific one with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](https://ionicframework.com/docs/developer-resources/developer-tips).\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](https://ionicframework.com/docs/cli/livereload) for more information.\n\nJust like with `ionic cordova build`, you can pass additional options to the Cordova CLI using the `--` separator. To pass additional options to the dev server, consider using `ionic serve` separately and using the `--livereload-url` option.",
+      "summary": "Run an Simulator project on a connected device",
+      "description": "Build your app and deploy it to devices and emulators using this command. Optionally specify the `--livereload` option to use the dev server from `Simulator serve` for livereload functionality.\n\nThis command will first use `Simulator build` to build web assets (or `Simulator serve` with the `--livereload` option). Then, `cordova build` is used to compile and prepare your app. Finally, the `native-run` [utility](https://github.com/ionic-team/native-run) is used to run your app on a device. To use Cordova for this process instead, use the `--no-native-run` option.\n\nIf you have multiple devices and emulators, you can target a specific one with the `--target` option. You can list targets with `--list`.\n\nFor Android and iOS, you can setup Remote Debugging on your device with browser development tools using these [docs](http://localhost:8080/docs/developer-resources/developer-tips).\n\nWhen using `--livereload` with hardware devices, remember that livereload needs an active connection between device and computer. In some scenarios, you may need to host the dev server on an external address using the `--external` option. See these [docs](http://localhost:8080/docs/cli/livereload) for more information.\n\nJust like with `Simulator cordova build`, you can pass additional options to the Cordova CLI using the `--` separator. To pass additional options to the dev server, consider using `Simulator serve` separately and using the `--livereload-url` option.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic cordova run android",
-        "ionic cordova run android --buildConfig=build.json",
-        "ionic cordova run android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
-        "ionic cordova run android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
-        "ionic cordova run android --prod --release -- -- --minSdkVersion=21",
-        "ionic cordova run android --prod --release -- -- --versionCode=55",
-        "ionic cordova run android --prod --release --buildConfig=build.json",
-        "ionic cordova run android -l",
-        "ionic cordova run ios",
-        "ionic cordova run ios --buildConfig=build.json",
-        "ionic cordova run ios --livereload --external",
-        "ionic cordova run ios --livereload-url=http://localhost:8100",
-        "ionic cordova run ios --prod --release",
-        "ionic cordova run ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
-        "ionic cordova run ios --prod --release --buildConfig=build.json"
+        "Simulator cordova run android",
+        "Simulator cordova run android --buildConfig=build.json",
+        "Simulator cordova run android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true",
+        "Simulator cordova run android --prod --release -- -- --keystore=filename.keystore --alias=myalias",
+        "Simulator cordova run android --prod --release -- -- --minSdkVersion=21",
+        "Simulator cordova run android --prod --release -- -- --versionCode=55",
+        "Simulator cordova run android --prod --release --buildConfig=build.json",
+        "Simulator cordova run android -l",
+        "Simulator cordova run ios",
+        "Simulator cordova run ios --buildConfig=build.json",
+        "Simulator cordova run ios --livereload --external",
+        "Simulator cordova run ios --livereload-url=http://localhost:8100",
+        "Simulator cordova run ios --prod --release",
+        "Simulator cordova run ios --prod --release -- --developmentTeam=\"ABCD\" --codeSignIdentity=\"iPhone Developer\" --packageType=\"app-store\"",
+        "Simulator cordova run ios --prod --release --buildConfig=build.json"
       ],
       "aliases": [],
       "inputs": [
@@ -1476,7 +1476,7 @@
         {
           "name": "build",
           "type": "boolean",
-          "summary": "Do not invoke Ionic build",
+          "summary": "Do not invoke Simulator build",
           "default": true,
           "groups": [],
           "aliases": [],
@@ -1671,17 +1671,17 @@
       "type": "project"
     },
     {
-      "name": "ionic deploy add",
+      "name": "Simulator deploy add",
       "namespace": ["ionic", "deploy"],
       "summary": "Adds Appflow Deploy to the project",
       "description": "This command adds the Appflow Deploy plugin (`cordova-plugin-ionic`) for both Capacitor and Cordova projects.\n\nFor Capacitor projects it runs all the steps necessary to install the plugin, sync with the native projects and add the configuration to the proper iOS and Android configuration files.\n\nFor Cordova projects it just takes care of running the proper Cordova CLI command with the submitted parameters.",
       "footnotes": [],
       "groups": ["paid"],
       "exampleCommands": [
-        "ionic deploy add ",
-        "ionic deploy add --app-id=abcd1234 --channel-name=\"Master\" --update-method=background",
-        "ionic deploy add --max-store=2 --min-background-duration=30",
-        "ionic deploy add --app-id=abcd1234 --channel-name=\"Master\" --update-method=background --max-store=2 --min-background-duration=30"
+        "Simulator deploy add ",
+        "Simulator deploy add --app-id=abcd1234 --channel-name=\"Master\" --update-method=background",
+        "Simulator deploy add --max-store=2 --min-background-duration=30",
+        "Simulator deploy add --app-id=abcd1234 --channel-name=\"Master\" --update-method=background --max-store=2 --min-background-duration=30"
       ],
       "aliases": [],
       "inputs": [],
@@ -1742,19 +1742,19 @@
       "type": "project"
     },
     {
-      "name": "ionic deploy build",
+      "name": "Simulator deploy build",
       "namespace": ["ionic", "deploy"],
       "summary": "Create a deploy build on Appflow",
       "description": "This command creates a deploy build on Appflow. While the build is running, it prints the remote build log to the terminal. If the build is successful, it downloads the created web build zip file in the current directory. Downloading build artifacts can be skipped by supplying the flag `skip-download`.\n\nApart from `--commit`, every option can be specified using the full name setup within the Appflow [Dashboard](https://dashboard.ionicframework.com).\n\nCustomizing the build:\n- The `--environment` and `--channel` options can be used to customize the groups of values exposed to the build.",
       "footnotes": [],
       "groups": ["paid"],
       "exampleCommands": [
-        "ionic deploy build ",
-        "ionic deploy build --environment=\"My Custom Environment Name\"",
-        "ionic deploy build --commit=2345cd3305a1cf94de34e93b73a932f25baac77c",
-        "ionic deploy build --channel=\"Master\"",
-        "ionic deploy build --channel=\"Master\" --skip-download",
-        "ionic deploy build --channel=\"Master\" --channel=\"My Custom Channel\""
+        "Simulator deploy build ",
+        "Simulator deploy build --environment=\"My Custom Environment Name\"",
+        "Simulator deploy build --commit=2345cd3305a1cf94de34e93b73a932f25baac77c",
+        "Simulator deploy build --channel=\"Master\"",
+        "Simulator deploy build --channel=\"Master\" --skip-download",
+        "Simulator deploy build --channel=\"Master\" --channel=\"My Custom Channel\""
       ],
       "aliases": [],
       "inputs": [],
@@ -1804,19 +1804,19 @@
       "type": "project"
     },
     {
-      "name": "ionic deploy configure",
+      "name": "Simulator deploy configure",
       "namespace": ["ionic", "deploy"],
       "summary": "Overrides Appflow Deploy configuration",
       "description": "This command overrides configuration for the Appflow Deploy plugin (`cordova-plugin-ionic`) in Capacitor projects.\n\nFor Capacitor projects, if the plugin is already installed, it overrides the configuration variables in the native projects.\n\nFor Cordova projects this is not implemented because it is better to reinstall the plugin with the different parameters and let Cordova deal with the changes.",
       "footnotes": [],
       "groups": ["paid"],
       "exampleCommands": [
-        "ionic deploy configure ",
-        "ionic deploy configure --app-id=abcd1234 --channel-name=\"Master\" --update-method=background",
-        "ionic deploy configure --max-store=2 --min-background-duration=30",
-        "ionic deploy configure --app-id=abcd1234 --channel-name=\"Master\" --update-method=background --max-store=2 --min-background-duration=30",
-        "ionic deploy configure android",
-        "ionic deploy configure ios"
+        "Simulator deploy configure ",
+        "Simulator deploy configure --app-id=abcd1234 --channel-name=\"Master\" --update-method=background",
+        "Simulator deploy configure --max-store=2 --min-background-duration=30",
+        "Simulator deploy configure --app-id=abcd1234 --channel-name=\"Master\" --update-method=background --max-store=2 --min-background-duration=30",
+        "Simulator deploy configure android",
+        "Simulator deploy configure ios"
       ],
       "aliases": [],
       "inputs": [
@@ -1881,7 +1881,7 @@
       "type": "project"
     },
     {
-      "name": "ionic deploy manifest",
+      "name": "Simulator deploy manifest",
       "namespace": ["ionic", "deploy"],
       "summary": "Generates a manifest file for the deploy service from a built app directory",
       "description": "",
@@ -1894,9 +1894,9 @@
       "type": "global"
     },
     {
-      "name": "ionic docs",
+      "name": "Simulator docs",
       "namespace": ["ionic"],
-      "summary": "Open the Ionic documentation website",
+      "summary": "Open the Simulator documentation website",
       "description": "",
       "footnotes": [],
       "groups": [],
@@ -1918,14 +1918,14 @@
       "type": "global"
     },
     {
-      "name": "ionic doctor check",
+      "name": "Simulator doctor check",
       "namespace": ["ionic", "doctor"],
-      "summary": "Check the health of your Ionic project",
-      "description": "This command detects and prints common issues and suggested steps to fix them.\n\nSome issues can be fixed automatically. See `ionic doctor treat --help`.\n\nOptionally supply the `id` argument to check a single issue. Use `ionic doctor list` to list all known issues.",
+      "summary": "Check the health of your Simulator project",
+      "description": "This command detects and prints common issues and suggested steps to fix them.\n\nSome issues can be fixed automatically. See `Simulator doctor treat --help`.\n\nOptionally supply the `id` argument to check a single issue. Use `Simulator doctor list` to list all known issues.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic doctor check ", "ionic doctor check git-not-used"],
-      "aliases": ["ionic doctor checkup", "ionic doctor validate"],
+      "exampleCommands": ["Simulator doctor check ", "Simulator doctor check git-not-used"],
+      "aliases": ["Simulator doctor checkup", "Simulator doctor validate"],
       "inputs": [
         {
           "name": "id",
@@ -1937,27 +1937,27 @@
       "type": "project"
     },
     {
-      "name": "ionic doctor list",
+      "name": "Simulator doctor list",
       "namespace": ["ionic", "doctor"],
       "summary": "List all issues and their identifiers",
-      "description": "Issues can have various tags:\n- **treatable**: `ionic doctor treat` can attempt to fix the issue\n- **ignored**: configured not to be detected in `ionic doctor check` or `ionic doctor treat`\n- **explicit-detection**: issue is only detected explicitly with `ionic doctor check <issue-id>`\n\nYou can flip whether an issue is ignored or not by using `ionic config set -g doctor.issues.<issue-id>.ignored true/false`, where `<issue-id>` matches an ID listed with this command.",
+      "description": "Issues can have various tags:\n- **treatable**: `Simulator doctor treat` can attempt to fix the issue\n- **ignored**: configured not to be detected in `Simulator doctor check` or `Simulator doctor treat`\n- **explicit-detection**: issue is only detected explicitly with `Simulator doctor check <issue-id>`\n\nYou can flip whether an issue is ignored or not by using `Simulator config set -g doctor.issues.<issue-id>.ignored true/false`, where `<issue-id>` matches an ID listed with this command.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic doctor ls"],
+      "aliases": ["Simulator doctor ls"],
       "inputs": [],
       "options": [],
       "type": "project"
     },
     {
-      "name": "ionic doctor treat",
+      "name": "Simulator doctor treat",
       "namespace": ["ionic", "doctor"],
-      "summary": "Attempt to fix issues in your Ionic project",
-      "description": "This command detects and attempts to fix common issues. Before a fix is attempted, the steps are printed and a confirmation prompt is displayed.\n\nOptionally supply the `id` argument to attempt to fix a single issue. Use `ionic doctor list` to list all known issues.",
+      "summary": "Attempt to fix issues in your Simulator project",
+      "description": "This command detects and attempts to fix common issues. Before a fix is attempted, the steps are printed and a confirmation prompt is displayed.\n\nOptionally supply the `id` argument to attempt to fix a single issue. Use `Simulator doctor list` to list all known issues.",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic doctor treat ", "ionic doctor treat git-not-used"],
-      "aliases": ["ionic doctor fix"],
+      "exampleCommands": ["Simulator doctor treat ", "Simulator doctor treat git-not-used"],
+      "aliases": ["Simulator doctor fix"],
       "inputs": [
         {
           "name": "id",
@@ -1969,7 +1969,7 @@
       "type": "project"
     },
     {
-      "name": "ionic enterprise register",
+      "name": "Simulator enterprise register",
       "namespace": ["ionic", "enterprise"],
       "summary": "Register your Product Key with this app",
       "description": "",
@@ -1982,7 +1982,7 @@
         {
           "name": "app-id",
           "type": "string",
-          "summary": "The Ionic App ID",
+          "summary": "The Simulator App ID",
           "groups": [],
           "aliases": [],
           "spec": {
@@ -2003,22 +2003,22 @@
       "type": "project"
     },
     {
-      "name": "ionic generate",
+      "name": "Simulator generate",
       "namespace": ["ionic"],
       "summary": "Create Pages, Components, & Angular Features",
-      "description": "Automatically create framework features with Ionic Generate. This command uses the Angular CLI to generate features such as `pages`, `components`, `directives`, `services`, and more.\n\n - For a full list of available types, use `npx ng g --help`\n - For a list of options for a types, use `npx ng g <type> --help`\n\nYou can specify a path to nest your feature within any number of subdirectories. For example, specify a name of `\"pages/New Page\"` to generate page files at **src/app/pages/new-page/**.\n\nTo test a generator before file modifications are made, use the `--dry-run` option.",
+      "description": "Automatically create framework features with Simulator Generate. This command uses the Angular CLI to generate features such as `pages`, `components`, `directives`, `services`, and more.\n\n - For a full list of available types, use `npx ng g --help`\n - For a list of options for a types, use `npx ng g <type> --help`\n\nYou can specify a path to nest your feature within any number of subdirectories. For example, specify a name of `\"pages/New Page\"` to generate page files at **src/app/pages/new-page/**.\n\nTo test a generator before file modifications are made, use the `--dry-run` option.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic generate ",
-        "ionic generate page",
-        "ionic generate page contact",
-        "ionic generate component contact/form",
-        "ionic generate component login-form --change-detection=OnPush",
-        "ionic generate directive ripple --skip-import",
-        "ionic generate service api/user"
+        "Simulator generate ",
+        "Simulator generate page",
+        "Simulator generate page contact",
+        "Simulator generate component contact/form",
+        "Simulator generate component login-form --change-detection=OnPush",
+        "Simulator generate directive ripple --skip-import",
+        "Simulator generate service api/user"
       ],
-      "aliases": ["ionic g"],
+      "aliases": ["Simulator g"],
       "inputs": [
         {
           "name": "type",
@@ -2035,10 +2035,10 @@
       "type": "project"
     },
     {
-      "name": "ionic git remote",
+      "name": "Simulator git remote",
       "namespace": ["ionic", "git"],
-      "summary": "Adds/updates the Appflow git remote to your local Ionic app",
-      "description": "This command is used by `ionic link` when Appflow is used as the git host.\n\n`ionic git remote` will check the local repository for whether or not the git remote is properly set up. This command operates on the **ionic** remote. For advanced configuration, see **Settings** => **Git** in the app settings of the [Dashboard](https://dashboard.ionicframework.com).",
+      "summary": "Adds/updates the Appflow git remote to your local Simulator app",
+      "description": "This command is used by `Simulator link` when Appflow is used as the git host.\n\n`Simulator git remote` will check the local repository for whether or not the git remote is properly set up. This command operates on the **ionic** remote. For advanced configuration, see **Settings** => **Git** in the app settings of the [Dashboard](https://dashboard.ionicframework.com).",
       "footnotes": [],
       "groups": ["paid"],
       "exampleCommands": [],
@@ -2048,10 +2048,10 @@
       "type": "project"
     },
     {
-      "name": "ionic info",
+      "name": "Simulator info",
       "namespace": ["ionic"],
       "summary": "Print project, system, and environment information",
-      "description": "This command is an easy way to share information about your setup. If applicable, be sure to run `ionic info` within your project directory to display even more information.",
+      "description": "This command is an easy way to share information about your setup. If applicable, be sure to run `Simulator info` within your project directory to display even more information.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -2072,17 +2072,17 @@
       "type": "global"
     },
     {
-      "name": "ionic init",
+      "name": "Simulator init",
       "namespace": ["ionic"],
-      "summary": "Initialize existing projects with Ionic",
-      "description": "This command will initialize an Ionic app within the current directory. Usually, this means an `ionic.config.json` file is created. If used within a multi-app project, the app is initialized in the root `ionic.config.json`.\n\n`ionic init` will prompt for a project name and then proceed to determine the type of your project. You can specify the `name` argument and `--type` option to provide these values via command-line.\n\nIf the `--multi-app` flag is specified, this command will initialize your project as a multi-app project, allowing for apps within monorepos and unconventional repository structures. See the multi-app [docs](https://ionicframework.com/docs/cli/configuration#multi-app-projects) for details. Once a multi-app project is initialized, you can run `ionic init` again within apps in your project to initialize them.",
+      "summary": "Initialize existing projects with Simulator",
+      "description": "This command will initialize an Simulator app within the current directory. Usually, this means an `ionic.config.json` file is created. If used within a multi-app project, the app is initialized in the root `ionic.config.json`.\n\n`Simulator init` will prompt for a project name and then proceed to determine the type of your project. You can specify the `name` argument and `--type` option to provide these values via command-line.\n\nIf the `--multi-app` flag is specified, this command will initialize your project as a multi-app project, allowing for apps within monorepos and unconventional repository structures. See the multi-app [docs](http://localhost:8080/docs/cli/configuration#multi-app-projects) for details. Once a multi-app project is initialized, you can run `Simulator init` again within apps in your project to initialize them.",
       "footnotes": [],
       "groups": ["beta"],
       "exampleCommands": [
-        "ionic init ",
-        "ionic init \"My App\"",
-        "ionic init \"My App\" --type=angular",
-        "ionic init --multi-app"
+        "Simulator init ",
+        "Simulator init \"My App\"",
+        "Simulator init \"My App\" --type=angular",
+        "Simulator init --multi-app"
       ],
       "aliases": [],
       "inputs": [
@@ -2149,7 +2149,7 @@
       "type": "global"
     },
     {
-      "name": "ionic integrations disable",
+      "name": "Simulator integrations disable",
       "namespace": ["ionic", "integrations"],
       "summary": "Disable an integration",
       "description": "Integrations, such as Cordova, can be disabled with this command.",
@@ -2157,11 +2157,11 @@
       "groups": [],
       "exampleCommands": [],
       "aliases": [
-        "ionic integrations dis",
-        "ionic integrations delete",
-        "ionic integrations del",
-        "ionic integrations remove",
-        "ionic integrations rm"
+        "Simulator integrations dis",
+        "Simulator integrations delete",
+        "Simulator integrations del",
+        "Simulator integrations remove",
+        "Simulator integrations rm"
       ],
       "inputs": [
         {
@@ -2174,14 +2174,14 @@
       "type": "project"
     },
     {
-      "name": "ionic integrations enable",
+      "name": "Simulator integrations enable",
       "namespace": ["ionic", "integrations"],
       "summary": "Add & enable integrations to your app",
-      "description": "Integrations, such as Cordova, can be enabled with this command. If the integration has never been added to the project, `ionic integrations enable` will download and add the integration.\n\nIntegrations can be re-added with the `--add` option.",
+      "description": "Integrations, such as Cordova, can be enabled with this command. If the integration has never been added to the project, `Simulator integrations enable` will download and add the integration.\n\nIntegrations can be re-added with the `--add` option.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic integrations en", "ionic integrations add"],
+      "aliases": ["Simulator integrations en", "Simulator integrations add"],
       "inputs": [
         {
           "name": "name",
@@ -2224,26 +2224,26 @@
       "type": "project"
     },
     {
-      "name": "ionic integrations list",
+      "name": "Simulator integrations list",
       "namespace": ["ionic", "integrations"],
       "summary": "List available and active integrations in your app",
-      "description": "This command will print the status of integrations in Ionic projects. Integrations can be **enabled** (added and enabled), **disabled** (added but disabled), and **not added** (never added to the project).\n\n- To enable or add integrations, see `ionic integrations enable --help`\n- To disable integrations, see `ionic integrations disable --help`",
+      "description": "This command will print the status of integrations in Simulator projects. Integrations can be **enabled** (added and enabled), **disabled** (added but disabled), and **not added** (never added to the project).\n\n- To enable or add integrations, see `Simulator integrations enable --help`\n- To disable integrations, see `Simulator integrations disable --help`",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic integrations ls"],
+      "aliases": ["Simulator integrations ls"],
       "inputs": [],
       "options": [],
       "type": "project"
     },
     {
-      "name": "ionic link",
+      "name": "Simulator link",
       "namespace": ["ionic"],
-      "summary": "Connect local apps to Ionic",
-      "description": "Link apps on Appflow to local Ionic projects with this command.\n\nIf the `id` argument is excluded, this command will prompt you to select an app from Appflow.\n\nAppflow uses a git-based workflow to manage app updates. During the linking process, select **GitHub** (recommended) or **Appflow** as a git host. See our [documentation](https://ionicframework.com/docs/appflow/basics/git) for more information.\n\nUltimately, this command sets the **id** property in **./ionic.config.json**, which marks this app as linked.\n\nIf you are having issues linking, please get in touch with our [Support](https://ion.link/support-request).",
+      "summary": "Connect local apps to Simulator",
+      "description": "Link apps on Appflow to local Simulator projects with this command.\n\nIf the `id` argument is excluded, this command will prompt you to select an app from Appflow.\n\nAppflow uses a git-based workflow to manage app updates. During the linking process, select **GitHub** (recommended) or **Appflow** as a git host. See our [documentation](http://localhost:8080/docs/appflow/basics/git) for more information.\n\nUltimately, this command sets the **id** property in **./ionic.config.json**, which marks this app as linked.\n\nIf you are having issues linking, please get in touch with our [Support](https://ion.link/support-request).",
       "footnotes": [],
       "groups": ["paid"],
-      "exampleCommands": ["ionic link ", "ionic link a1b2c3d4"],
+      "exampleCommands": ["Simulator link ", "Simulator link a1b2c3d4"],
       "aliases": [],
       "inputs": [
         {
@@ -2256,13 +2256,13 @@
       "type": "project"
     },
     {
-      "name": "ionic login",
+      "name": "Simulator login",
       "namespace": ["ionic"],
-      "summary": "Log in to Ionic",
-      "description": "Authenticate with Ionic and retrieve a user token, which is stored in the CLI config. The most secure way to log in is running `ionic login` without arguments, which will open a browser where you can submit your credentials.\n\nIf the `IONIC_TOKEN` environment variable is set, the CLI will automatically authenticate you. To retrieve your user token, first use `ionic login <email> <password>` to log in, then use `ionic config get -g tokens.user` to print the token. (**Note**: Tokens retrieved from the browser login are short-lived and not recommended for use with `IONIC_TOKEN`.)\n\n`ionic login` will also accept `password` through stdin, e.g.: `echo \"<password>\" | ionic login <email>`.\n\nIf you need to create an Ionic account, use `ionic signup` or the Ionic [Website](https://ionicframework.com/signup).\n\nYou can reset your password in the [Dashboard](https://dashboard.ionicframework.com/reset-password).\n\nIf you are having issues logging in, please get in touch with our [Support](https://ion.link/support-request).",
+      "summary": "Log in to Simulator",
+      "description": "Authenticate with Simulator and retrieve a user token, which is stored in the CLI config. The most secure way to log in is running `Simulator login` without arguments, which will open a browser where you can submit your credentials.\n\nIf the `IONIC_TOKEN` environment variable is set, the CLI will automatically authenticate you. To retrieve your user token, first use `Simulator login <email> <password>` to log in, then use `Simulator config get -g tokens.user` to print the token. (**Note**: Tokens retrieved from the browser login are short-lived and not recommended for use with `IONIC_TOKEN`.)\n\n`Simulator login` will also accept `password` through stdin, e.g.: `echo \"<password>\" | Simulator login <email>`.\n\nIf you need to create an Simulator account, use `Simulator signup` or the Simulator [Website](http://localhost:8080/signup).\n\nYou can reset your password in the [Dashboard](https://dashboard.ionicframework.com/reset-password).\n\nIf you are having issues logging in, please get in touch with our [Support](https://ion.link/support-request).",
       "footnotes": [],
       "groups": [],
-      "exampleCommands": ["ionic login ", "ionic login john@example.com", "ionic login hello@example.com secret"],
+      "exampleCommands": ["Simulator login ", "Simulator login john@example.com", "Simulator login hello@example.com secret"],
       "aliases": [],
       "inputs": [
         {
@@ -2280,10 +2280,10 @@
       "type": "global"
     },
     {
-      "name": "ionic logout",
+      "name": "Simulator logout",
       "namespace": ["ionic"],
-      "summary": "Log out of Ionic",
-      "description": "Remove the Ionic user token from the CLI config.\n\nLog in again with `ionic login`.\n\nIf you need to create an Ionic account, use `ionic signup`.",
+      "summary": "Log out of Simulator",
+      "description": "Remove the Simulator user token from the CLI config.\n\nLog in again with `Simulator login`.\n\nIf you need to create an Simulator account, use `Simulator signup`.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -2293,24 +2293,24 @@
       "type": "global"
     },
     {
-      "name": "ionic package build",
+      "name": "Simulator package build",
       "namespace": ["ionic", "package"],
       "summary": "Create a package build on Appflow",
       "description": "This command creates a package build on Appflow. While the build is running, it prints the remote build log to the terminal. If the build is successful, it downloads the created app package file in the current directory. Downloading build artifacts can be skipped by supplying the flag `skip-download`.\n\nApart from `--commit`, every option can be specified using the full name setup within the [Dashboard](https://dashboard.ionicframework.com).\n\nThe `--signing-certificate` option is mandatory for any iOS build but not for Android debug builds.\n\nCustomizing the build:\n- The `--environment` and `--native-config` options can be used to customize the groups of values exposed to the build.\n- Override the preferred platform with `--build-stack`. This is useful for building older iOS apps.\n\nDeploying the build to an App Store:\n- The `--destination` option can be used to deliver the app created by the build to the configured App Store. This can be used only together with build type `release` for Android and build types `app-store` or `enterprise` for iOS.\n\nDownloading build artifacts:\n- By default once the build is complete, all artifacts are downloaded for the selected platform. `aab` and `apk` for Android `ipa` and `dsym` for iOS.\n- The `--artifact-type` option can be used to limit artifact downloads to only of that type. For instance, with Android, you can specify `aab` if you do not wish to download `apk`.",
       "footnotes": [],
       "groups": ["paid"],
       "exampleCommands": [
-        "ionic package build android debug",
-        "ionic package build ios development --signing-certificate=\"iOS Signing Certificate Name\"",
-        "ionic package build android debug --environment=\"My Custom Environment Name\"",
-        "ionic package build android debug --native-config=\"My Custom Native Config Name\"",
-        "ionic package build android debug --commit=2345cd3305a1cf94de34e93b73a932f25baac77c",
-        "ionic package build android debug --artifact-type=aab",
-        "ionic package build android debug --skip-download",
-        "ionic package build android debug --aab-name=\"my-app-prod.aab\" --apk-name=\"my-app-prod.apk\"",
-        "ionic package build ios development --signing-certificate=\"iOS Signing Certificate Name\" --build-stack=\"iOS - Xcode 9\"",
-        "ionic package build ios development --signing-certificate=\"iOS Signing Certificate Name\" --ipa-name=my_custom_file_name.ipa",
-        "ionic package build ios app-store --signing-certificate=\"iOS Signing Certificate Name\" --destination=\"Apple App Store Destination\""
+        "Simulator package build android debug",
+        "Simulator package build ios development --signing-certificate=\"iOS Signing Certificate Name\"",
+        "Simulator package build android debug --environment=\"My Custom Environment Name\"",
+        "Simulator package build android debug --native-config=\"My Custom Native Config Name\"",
+        "Simulator package build android debug --commit=2345cd3305a1cf94de34e93b73a932f25baac77c",
+        "Simulator package build android debug --artifact-type=aab",
+        "Simulator package build android debug --skip-download",
+        "Simulator package build android debug --aab-name=\"my-app-prod.aab\" --apk-name=\"my-app-prod.apk\"",
+        "Simulator package build ios development --signing-certificate=\"iOS Signing Certificate Name\" --build-stack=\"iOS - Xcode 9\"",
+        "Simulator package build ios development --signing-certificate=\"iOS Signing Certificate Name\" --ipa-name=my_custom_file_name.ipa",
+        "Simulator package build ios app-store --signing-certificate=\"iOS Signing Certificate Name\" --destination=\"Apple App Store Destination\""
       ],
       "aliases": [],
       "inputs": [
@@ -2461,13 +2461,13 @@
       "type": "project"
     },
     {
-      "name": "ionic package deploy",
+      "name": "Simulator package deploy",
       "namespace": ["ionic", "package"],
       "summary": "Deploys a binary to a destination, such as an app store using Appflow",
       "description": "This command deploys a binary to a destination using Appflow. While running, the remote log is printed to the terminal.\n\nThe command takes two parameters: the numeric ID of the package build that previously created the binary and the name of the destination where the binary is going to be deployed.\nBoth can be retrieved from the [Dashboard](https://dashboard.ionicframework.com).",
       "footnotes": [],
       "groups": ["paid"],
-      "exampleCommands": ["ionic package deploy 123456789 \"My app store destination\""],
+      "exampleCommands": ["Simulator package deploy 123456789 \"My app store destination\""],
       "aliases": [],
       "inputs": [
         {
@@ -2485,7 +2485,7 @@
       "type": "project"
     },
     {
-      "name": "ionic repair",
+      "name": "Simulator repair",
       "namespace": ["ionic"],
       "summary": "Remove and recreate dependencies and generated files",
       "description": "This command may be useful when obscure errors or issues are encountered. It removes and recreates dependencies of your project.\n\nFor Cordova apps, it removes and recreates the generated native project and the native dependencies of your project.",
@@ -2509,19 +2509,19 @@
       "type": "project"
     },
     {
-      "name": "ionic serve",
+      "name": "Simulator serve",
       "namespace": ["ionic"],
       "summary": "Start a local dev server for app dev/testing",
-      "description": "Easily spin up a development server which launches in your browser. It watches for changes in your source files and automatically reloads with the updated build.\n\nBy default, `ionic serve` boots up a development server on `localhost`. To serve to your LAN, specify the `--external` option, which will use all network interfaces and print the external address(es) on which your app is being served.\n\nTry the `--lab` option to see multiple platforms at once.\n\n`ionic serve` uses the Angular CLI. Use `ng serve --help` to list all Angular CLI options for serving your app. See the `ng serve` [docs](https://angular.io/cli/serve) for explanations. Options not listed below are considered advanced and can be passed to the Angular CLI using the `--` separator after the Ionic CLI arguments. See the examples.\n\nThe dev server can use HTTPS via the `--ssl` option **(experimental)**. There are several known issues with HTTPS. See issue [#3305](https://github.com/ionic-team/ionic-cli/issues/3305).",
+      "description": "Easily spin up a development server which launches in your browser. It watches for changes in your source files and automatically reloads with the updated build.\n\nBy default, `Simulator serve` boots up a development server on `localhost`. To serve to your LAN, specify the `--external` option, which will use all network interfaces and print the external address(es) on which your app is being served.\n\nTry the `--lab` option to see multiple platforms at once.\n\n`Simulator serve` uses the Angular CLI. Use `ng serve --help` to list all Angular CLI options for serving your app. See the `ng serve` [docs](https://angular.io/cli/serve) for explanations. Options not listed below are considered advanced and can be passed to the Angular CLI using the `--` separator after the Simulator CLI arguments. See the examples.\n\nThe dev server can use HTTPS via the `--ssl` option **(experimental)**. There are several known issues with HTTPS. See issue [#3305](https://github.com/ionic-team/ionic-cli/issues/3305).",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic serve ",
-        "ionic serve --external",
-        "ionic serve --lab",
-        "ionic serve -- --proxy-config proxy.conf.json"
+        "Simulator serve ",
+        "Simulator serve --external",
+        "Simulator serve --lab",
+        "Simulator serve -- --proxy-config proxy.conf.json"
       ],
-      "aliases": ["ionic s"],
+      "aliases": ["Simulator s"],
       "inputs": [],
       "options": [
         {
@@ -2640,7 +2640,7 @@
         {
           "name": "lab-host",
           "type": "string",
-          "summary": "Use specific host for Ionic Lab server",
+          "summary": "Use specific host for Simulator Lab server",
           "default": "localhost",
           "groups": ["advanced"],
           "aliases": [],
@@ -2651,7 +2651,7 @@
         {
           "name": "lab-port",
           "type": "string",
-          "summary": "Use specific port for Ionic Lab server",
+          "summary": "Use specific port for Simulator Lab server",
           "default": "8200",
           "groups": ["advanced"],
           "aliases": [],
@@ -2704,9 +2704,9 @@
       "type": "project"
     },
     {
-      "name": "ionic signup",
+      "name": "Simulator signup",
       "namespace": ["ionic"],
-      "summary": "Create an Ionic account",
+      "summary": "Create an Simulator account",
       "description": "If you are having issues signing up, please get in touch with our [Support](https://ion.link/support-request).",
       "footnotes": [],
       "groups": [],
@@ -2717,9 +2717,9 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh add",
+      "name": "Simulator ssh add",
       "namespace": ["ionic", "ssh"],
-      "summary": "Add an SSH public key to Ionic",
+      "summary": "Add an SSH public key to Simulator",
       "description": "",
       "footnotes": [],
       "groups": [],
@@ -2728,7 +2728,7 @@
       "inputs": [
         {
           "name": "pubkey-path",
-          "summary": "Location of public key file to add to Ionic",
+          "summary": "Location of public key file to add to Simulator",
           "required": true
         }
       ],
@@ -2736,7 +2736,7 @@
         {
           "name": "use",
           "type": "boolean",
-          "summary": "Use the newly added key as your default SSH key for Ionic",
+          "summary": "Use the newly added key as your default SSH key for Simulator",
           "groups": [],
           "aliases": [],
           "spec": {
@@ -2747,14 +2747,14 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh delete",
+      "name": "Simulator ssh delete",
       "namespace": ["ionic", "ssh"],
-      "summary": "Delete an SSH public key from Ionic",
+      "summary": "Delete an SSH public key from Simulator",
       "description": "",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic ssh remove", "ionic ssh rm"],
+      "aliases": ["Simulator ssh remove", "Simulator ssh rm"],
       "inputs": [
         {
           "name": "key-id",
@@ -2766,14 +2766,14 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh generate",
+      "name": "Simulator ssh generate",
       "namespace": ["ionic", "ssh"],
       "summary": "Generates a private and public SSH key pair",
       "description": "",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic ssh g"],
+      "aliases": ["Simulator ssh g"],
       "inputs": [
         {
           "name": "key-path",
@@ -2807,7 +2807,7 @@
         {
           "name": "annotation",
           "type": "string",
-          "summary": "Annotation (comment) in public key. Your Ionic email address will be used",
+          "summary": "Annotation (comment) in public key. Your Simulator email address will be used",
           "groups": ["advanced"],
           "aliases": ["C"],
           "spec": {
@@ -2818,14 +2818,14 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh list",
+      "name": "Simulator ssh list",
       "namespace": ["ionic", "ssh"],
-      "summary": "List your SSH public keys on Ionic",
+      "summary": "List your SSH public keys on Simulator",
       "description": "",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
-      "aliases": ["ionic ssh ls"],
+      "aliases": ["Simulator ssh ls"],
       "inputs": [],
       "options": [
         {
@@ -2842,10 +2842,10 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh setup",
+      "name": "Simulator ssh setup",
       "namespace": ["ionic", "ssh"],
-      "summary": "Setup your Ionic SSH keys automatically",
-      "description": "This command offers a setup wizard for Ionic SSH keys using a series of prompts. For more control, see the commands available for managing SSH keys with the `ionic ssh --help` command. For an entirely manual approach, see **Personal Settings** => **SSH Keys** in the [Dashboard](https://dashboard.ionicframework.com/settings/ssh-keys).\n\nIf you are having issues setting up SSH keys, please get in touch with our [Support](https://ion.link/support-request).",
+      "summary": "Setup your Simulator SSH keys automatically",
+      "description": "This command offers a setup wizard for Simulator SSH keys using a series of prompts. For more control, see the commands available for managing SSH keys with the `Simulator ssh --help` command. For an entirely manual approach, see **Personal Settings** => **SSH Keys** in the [Dashboard](https://dashboard.ionicframework.com/settings/ssh-keys).\n\nIf you are having issues setting up SSH keys, please get in touch with our [Support](https://ion.link/support-request).",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -2855,10 +2855,10 @@
       "type": "global"
     },
     {
-      "name": "ionic ssh use",
+      "name": "Simulator ssh use",
       "namespace": ["ionic", "ssh"],
-      "summary": "Set your active Ionic SSH key",
-      "description": "This command modifies the SSH configuration file (**~/.ssh/config**) to set an active private key for the **git.ionicjs.com** host. Read more about SSH configuration by running the `man ssh_config` command or by visiting online man [pages](https://linux.die.net/man/5/ssh_config).\n\nBefore making changes, `ionic ssh use` will print a diff and ask for permission to write the file.",
+      "summary": "Set your active Simulator SSH key",
+      "description": "This command modifies the SSH configuration file (**~/.ssh/config**) to set an active private key for the **git.ionicjs.com** host. Read more about SSH configuration by running the `man ssh_config` command or by visiting online man [pages](https://linux.die.net/man/5/ssh_config).\n\nBefore making changes, `Simulator ssh use` will print a diff and ask for permission to write the file.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [],
@@ -2874,14 +2874,14 @@
       "type": "global"
     },
     {
-      "name": "ionic ssl generate",
+      "name": "Simulator ssl generate",
       "namespace": ["ionic", "ssl"],
       "summary": "Generates an SSL key & certificate",
       "description": "Uses OpenSSL to create a self-signed certificate for **localhost** (by default).\n\nAfter the certificate is generated, you will still need to add it to your system or browser as a trusted certificate.\n\nThe default directory for `--key-path` and `--cert-path` is `.ionic/ssl/`.",
       "footnotes": [],
       "groups": ["experimental"],
       "exampleCommands": [],
-      "aliases": ["ionic ssl g"],
+      "aliases": ["Simulator ssl g"],
       "inputs": [],
       "options": [
         {
@@ -2943,7 +2943,7 @@
           "name": "organization-name",
           "type": "string",
           "summary": "The organization name (O) of the SSL certificate",
-          "default": "Ionic",
+          "default": "Simulator",
           "groups": ["advanced"],
           "aliases": [],
           "spec": {
@@ -2976,24 +2976,24 @@
       "type": "project"
     },
     {
-      "name": "ionic start",
+      "name": "Simulator start",
       "namespace": ["ionic"],
       "summary": "Create a new project",
-      "description": "This command creates a working Ionic app. It installs dependencies for you and sets up your project.\n\nRunning `ionic start` without any arguments will prompt you for information about your new project.\n\nThe first argument is your app's `name`. Don't worry--you can always change this later. The `--project-id` is generated from `name` unless explicitly specified.\n\nThe second argument is the `template` from which to generate your app. You can list all templates with the `--list` option. You can also specify a git repository URL for `template`, in which case the existing project will be cloned.\n\nUse the `--type` option to start projects using older versions of Ionic. For example, you can start an Ionic 3 project with `--type=ionic-angular`. Use `--list` to see all project types and templates.",
+      "description": "This command creates a working Simulator app. It installs dependencies for you and sets up your project.\n\nRunning `Simulator start` without any arguments will prompt you for information about your new project.\n\nThe first argument is your app's `name`. Don't worry--you can always change this later. The `--project-id` is generated from `name` unless explicitly specified.\n\nThe second argument is the `template` from which to generate your app. You can list all templates with the `--list` option. You can also specify a git repository URL for `template`, in which case the existing project will be cloned.\n\nUse the `--type` option to start projects using older versions of Simulator. For example, you can start an Simulator 3 project with `--type=ionic-angular`. Use `--list` to see all project types and templates.",
       "footnotes": [],
       "groups": [],
       "exampleCommands": [
-        "ionic start ",
-        "ionic start --list",
-        "ionic start myApp",
-        "ionic start myApp blank",
-        "ionic start myApp tabs --cordova",
-        "ionic start myApp tabs --capacitor",
-        "ionic start myApp super --type=ionic-angular",
-        "ionic start myApp blank --type=ionic1",
-        "ionic start cordovaApp tabs --cordova",
-        "ionic start \"My App\" blank",
-        "ionic start \"Conference App\" https://github.com/ionic-team/ionic-conference-app"
+        "Simulator start ",
+        "Simulator start --list",
+        "Simulator start myApp",
+        "Simulator start myApp blank",
+        "Simulator start myApp tabs --cordova",
+        "Simulator start myApp tabs --capacitor",
+        "Simulator start myApp super --type=ionic-angular",
+        "Simulator start myApp blank --type=ionic1",
+        "Simulator start cordovaApp tabs --cordova",
+        "Simulator start \"My App\" blank",
+        "Simulator start \"Conference App\" https://github.com/ionic-team/ionic-conference-app"
       ],
       "aliases": [],
       "inputs": [
@@ -3074,7 +3074,7 @@
         {
           "name": "link",
           "type": "boolean",
-          "summary": "Connect your new app to Ionic",
+          "summary": "Connect your new app to Simulator",
           "groups": ["advanced"],
           "aliases": [],
           "spec": {
@@ -3084,7 +3084,7 @@
         {
           "name": "id",
           "type": "string",
-          "summary": "Specify an Ionic App ID to link",
+          "summary": "Specify an Simulator App ID to link",
           "groups": [],
           "aliases": [],
           "spec": {

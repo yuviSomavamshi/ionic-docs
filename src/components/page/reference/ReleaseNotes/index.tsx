@@ -31,7 +31,7 @@ export default function ReleaseNotes(props: { [key: string]: any }) {
   return (
     <article>
       <p className={styles.intro}>
-        A complete release history for Ionic Framework is available{' '}
+        A complete release history for Simulator Framework is available{' '}
         <a href="https://github.com/ionic-team/ionic/releases" target="_blank">
           on GitHub
         </a>

@@ -190,7 +190,7 @@
     "version": "6.0.1"
   },
   {
-    "body": "<p>Enjoy! 🚀</p>\n<blockquote>\n<p>We recommend updating to version <code>5.9.2</code> before updating to version <code>6.0.0</code> in order to see deprecation warnings related to your app <a href=\"https://javascript.info/devtools\">in the developer console</a>.</p>\n</blockquote>\n<p>Please see the <a href=\"https://ionicframework.com/docs/next/intro/upgrading-to-ionic-6\">Ionic 6 Upgrade Guide</a> for a step-by-step list of what you need to do to get started with Ionic 6.</p>\n",
+    "body": "<p>Enjoy! 🚀</p>\n<blockquote>\n<p>We recommend updating to version <code>5.9.2</code> before updating to version <code>6.0.0</code> in order to see deprecation warnings related to your app <a href=\"https://javascript.info/devtools\">in the developer console</a>.</p>\n</blockquote>\n<p>Please see the <a href=\"http://localhost:8080/docs/next/intro/upgrading-to-ionic-6\">Ionic 6 Upgrade Guide</a> for a step-by-step list of what you need to do to get started with Ionic 6.</p>\n",
     "element": "Titanium",
     "name": "6.0.0 Titanium",
     "published_at": "December 8 2021",

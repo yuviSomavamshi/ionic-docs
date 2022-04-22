@@ -13,7 +13,7 @@ const OUTPUT_PATH = resolve(__dirname, '../src/components/page/reference/Release
 //   task: async () => outputJson(OUTPUT_PATH, await getReleases(), { spaces: 2 })
 // };
 
-// Get the GitHub Releases from Ionic
+// Get the GitHub Releases from Simulator
 // This requires an environment GITHUB_TOKEN
 // otherwise it may fail silently
 const getReleases = async () => {

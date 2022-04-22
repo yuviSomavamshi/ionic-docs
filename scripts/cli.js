@@ -5,7 +5,7 @@ const { cli: cliOverrides } = require('./data/meta-override.json');
 
 const commandToKebab = (str) =>
   str
-    .replace('ionic ', '')
+    .replace('Simulator ', '')
     .replace(/([a-z])([A-Z])/g, '$1-$2')
     .replace(/[\s_]+/g, '-')
     .toLowerCase();
@@ -31,7 +31,7 @@ function writePage(page) {
 }
 
 function renderFrontmatter({ name }) {
-  const shortName = name.replace('ionic ', '');
+  const shortName = name.replace('Simulator ', '');
   const slug = commandToKebab(shortName);
 
   const frontmatter = {

@@ -30,8 +30,8 @@ const getAPIPages = async (): Promise<Page[]> => {
     const { readme, usage, props, methods, ...contents } = component;
 
     const meta = {
-      title: `${component.tag}: Ionic Framework API Docs`,
-      description: `The ${component.tag} component is one of many Ionic Framework components used to build apps for Android, iOS, and Progressive Web Apps`
+      title: `${component.tag}: Simulator Framework API Docs`,
+      description: `The ${component.tag} component is one of many Simulator Framework components used to build apps for Android, iOS, and Progressive Web Apps`
     };
 
     if (apiMetaInfo[component.tag]) {

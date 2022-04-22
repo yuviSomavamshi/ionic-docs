@@ -1,5 +1,5 @@
 {
-  "name": "ionic-docs",
+  "name": "simulator-docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -14,7 +14,7 @@
     "generate-markdown": "node scripts/native && concurrently \"node scripts/api\" \"node scripts/cli\" \"node scripts/release-notes\"",
     "serve": "docusaurus serve",
     "prestart": "npm run generate-markdown",
-    "start": "docusaurus start",
+    "start": "docusaurus start --host=0.0.0.0 --port=5000",
     "swizzle": "docusaurus swizzle --danger",
     "format": "prettier --ignore-path \"./.prettierignore\" --write \"./**/*.{js,jsx,json,html,ts,tsx,css}\""
   },
@@ -43,8 +43,6 @@
     "@docusaurus/preset-classic": "0.0.0-4192",
     "@docusaurus/theme-classic": "0.0.0-4192",
     "@docusaurus/theme-search-algolia": "0.0.0-4192",
-    "@ionic-internal/docusaurus-plugin-tag-manager": "^2.0.0",
-    "@ionic-internal/ionic-ds": "^7.0.0",
     "@mdx-js/react": "^1.6.22",
     "@prismicio/client": "^6.4.2",
     "@prismicio/react": "^2.2.0",

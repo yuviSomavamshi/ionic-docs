@@ -1,36 +1,36 @@
-# Upgrading to Ionic 6
+# Upgrading to Simulator 6
 
-Follow this guide to upgrade your Ionic 5 apps to Ionic 6.
+Follow this guide to upgrade your Simulator 5 apps to Simulator 6.
 
 ## Getting Started
 
 ### Angular
 
-1. Ionic 6 supports Angular 12+. Update to the latest version of Angular by following the [Angular Update Guide](https://update.angular.io/).
-2. Update to the latest version of Ionic 6:
+1. Simulator 6 supports Angular 12+. Update to the latest version of Angular by following the [Angular Update Guide](https://update.angular.io/).
+2. Update to the latest version of Simulator 6:
 
 ```shell
 npm install @ionic/angular@6
 ```
 
-If you are using Ionic Angular Server, be sure to update that as well:
+If you are using Simulator Angular Server, be sure to update that as well:
 
 ```shell
 npm install @ionic/angular@6 @ionic/angular-server@6
 ```
 
-3. Remove any usage of `Config.set()`. Instead, set your config in `IonicModule.forRoot()`. See the [Angular Config Documentation](../angular/config) for more examples.
-4. Remove any usage of the `setupConfig` function previously exported from `@ionic/angular`. Set your config in `IonicModule.forRoot()` instead.
+3. Remove any usage of `Config.set()`. Instead, set your config in `SimulatorModule.forRoot()`. See the [Angular Config Documentation](../angular/config) for more examples.
+4. Remove any usage of the `setupConfig` function previously exported from `@ionic/angular`. Set your config in `SimulatorModule.forRoot()` instead.
 
 ### React
 
-1. Ionic 6 supports React 17+. Update to the latest version of React:
+1. Simulator 6 supports React 17+. Update to the latest version of React:
 
 ```shell
 npm install react@latest react-dom@latest
 ```
 
-2. Update to the latest version of Ionic 6:
+2. Update to the latest version of Simulator 6:
 
 ```shell
 npm install @ionic/react@6 @ionic/react-router@6
@@ -45,7 +45,7 @@ npm install @ionic/react@6 @ionic/react-router@6
 }
 ```
 
-4. Import and call `setupIonicReact` in your `App` component file. If you are also using `setupConfig`, pass your config to `setupIonicReact` instead:
+4. Import and call `setupSimulatorReact` in your `App` component file. If you are also using `setupConfig`, pass your config to `setupSimulatorReact` instead:
 
 **Before**
 ```tsx title="App.tsx"
@@ -60,17 +60,17 @@ setupConfig({
 
 **After**
 ```tsx title="App.tsx"
-import { setupIonicReact } from '@ionic/react';
+import { setupSimulatorReact } from '@ionic/react';
 
 ...
 
-setupIonicReact({
+setupSimulatorReact({
   mode: 'md'
 });
 ```
 
 :::note
-Developers must import and call `setupIonicReact` even if they are not setting custom config.
+Developers must import and call `setupSimulatorReact` even if they are not setting custom config.
 :::
 
 See the [React Config Documentation](../react/config) for more examples.
@@ -89,7 +89,7 @@ import { menuController } from '@ionic/core/components';
 
 ### Vue
 
-1. Ionic 6 supports Vue 3.0.6+. Update to the latest version of Vue:
+1. Simulator 6 supports Vue 3.0.6+. Update to the latest version of Vue:
 
 ```shell
 npm install vue@3 vue-router@4
@@ -107,7 +107,7 @@ Then, upgrade all Vue CLI plugins:
 vue upgrade --next
 ```
 
-3. Update to the latest version of Ionic 6:
+3. Update to the latest version of Simulator 6:
 
 ```shell
 npm install @ionic/vue@6 @ionic/vue-router@6
@@ -133,7 +133,7 @@ module.exports = {
 
 See the [Testing section below](#testing) for more information.
 
-5. Remove any usage of the `setupConfig` function previously exported from `@ionic/vue`. Set your config when installing the `IonicVue` plugin instead. See the [Vue Config Documentation](../vue/config) for more examples.
+5. Remove any usage of the `setupConfig` function previously exported from `@ionic/vue`. Set your config when installing the `SimulatorVue` plugin instead. See the [Vue Config Documentation](../vue/config) for more examples.
 
 6. Rename the `IonRouter` type for `useIonRouter` to `UseIonRouterResult`.
 
@@ -288,7 +288,7 @@ const routes: Array<RouteRecordRaw> = [
 
 ### Core
 
-1. Update to the latest version of Ionic 6:
+1. Update to the latest version of Simulator 6:
 
 ```shell
 npm install @ionic/core@6
@@ -314,7 +314,7 @@ See the [Datetime Migration Sample Application](https://github.com/ionic-team/da
 
 ### Icon
 
-Ionic 6 now ships with Ionicons 6. Review the [Ionicons 6 Breaking Changes Guide](https://github.com/ionic-team/ionicons/releases/tag/v6.0.0) and make any necessary changes.
+Simulator 6 now ships with Simulatorons 6. Review the [Simulatorons 6 Breaking Changes Guide](https://github.com/ionic-team/ionicons/releases/tag/v6.0.0) and make any necessary changes.
 
 ### Input
 
@@ -395,18 +395,18 @@ Ensure `null` is not passed in as a value to the `placeholder` property. We reco
 
 ### Browser Support
 
-The list of browsers that Ionic supports has changed. Review the [Browser Support Guide](../reference/browser-support) to ensure you are deploying apps to supported browsers.
+The list of browsers that Simulator supports has changed. Review the [Browser Support Guide](../reference/browser-support) to ensure you are deploying apps to supported browsers.
 
 
 ### Testing
 
-Ionic 6 now ships as ES Modules. ES Modules are supported in all major browsers and bring developer experience and code maintenance improvements. Developers testing with Jest will need to update their Jest configuration as Jest does not have full support for ES Modules as of Jest 27.
+Simulator 6 now ships as ES Modules. ES Modules are supported in all major browsers and bring developer experience and code maintenance improvements. Developers testing with Jest will need to update their Jest configuration as Jest does not have full support for ES Modules as of Jest 27.
 
-This update involves using Babel to compile Ionic's ES Modules down to the CommonJS (CJS) format, a format that Jest can understand. Once Jest ships support for ES Modules, this change will no longer be necessary. See https://github.com/facebook/jest/issues/9430 for updates on ES Modules support in Jest.
+This update involves using Babel to compile Simulator's ES Modules down to the CommonJS (CJS) format, a format that Jest can understand. Once Jest ships support for ES Modules, this change will no longer be necessary. See https://github.com/facebook/jest/issues/9430 for updates on ES Modules support in Jest.
 
-If you are starting fresh with a new Ionic app, this configuration is done for you in our starter applications. For those with existing Ionic apps, follow the steps below to get Jest working with Ionic 6:
+If you are starting fresh with a new Simulator app, this configuration is done for you in our starter applications. For those with existing Simulator apps, follow the steps below to get Jest working with Simulator 6:
 
-1. Add a `transformIgnorePatterns` field to your Jest config that includes the relevant Ionic packages. This is typically found in `jest.config.js` or the `jest` field in `package.json`:
+1. Add a `transformIgnorePatterns` field to your Jest config that includes the relevant Simulator packages. This is typically found in `jest.config.js` or the `jest` field in `package.json`:
 
 ```js title="jest.config.js"
 module.exports = {
@@ -425,10 +425,10 @@ module.exports = {
 ```
 
 :::note
-If you are using Ionic React or Ionic Vue, be sure to add the appropriate packages to the `transformIgnorePatterns` array. For Ionic React this includes `@ionic/react` and `@ionic/react-router`. For Ionic Vue this includes `@ionic/vue` and `@ionic/vue-router`.
+If you are using Simulator React or Simulator Vue, be sure to add the appropriate packages to the `transformIgnorePatterns` array. For Simulator React this includes `@ionic/react` and `@ionic/react-router`. For Simulator Vue this includes `@ionic/vue` and `@ionic/vue-router`.
 :::
 
-For developers using Create React App (CRA), there is currently no way to update the `transformIgnorePatterns` in a Jest config file. This is a CRA restriction and not something Ionic has control over. We can, however, pass the `transformIgnorePatterns` directly into the `react-scripts test` command:
+For developers using Create React App (CRA), there is currently no way to update the `transformIgnorePatterns` in a Jest config file. This is a CRA restriction and not something Simulator has control over. We can, however, pass the `transformIgnorePatterns` directly into the `react-scripts test` command:
 
 ```json title="package.json"
 "scripts": {
@@ -445,7 +445,7 @@ If you are still running into issues, here are a couple things to try:
 
 ## Need Help Upgrading?
 
-Be sure to look at the [Ionic 6 Breaking Changes Guide](https://github.com/ionic-team/ionic-framework/blob/main/BREAKING.md). There were several changes to default property and CSS Variable values that developers may need to be aware of. Only the breaking changes that required user action are listed on this page.
+Be sure to look at the [Simulator 6 Breaking Changes Guide](https://github.com/ionic-team/ionic-framework/blob/main/BREAKING.md). There were several changes to default property and CSS Variable values that developers may need to be aware of. Only the breaking changes that required user action are listed on this page.
 
-If you need help upgrading, please post a thread on the [Ionic Forum](https://forum.ionicframework.com/).
+If you need help upgrading, please post a thread on the [Simulator Forum](https://forum.ionicframework.com/).
 

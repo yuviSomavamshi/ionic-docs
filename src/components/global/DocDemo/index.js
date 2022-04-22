@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import './demo.css';
 
 const DocDemo = (props) => {
-  const [ionicMode, setIonicMode] = useState('ios');
+  const [ionicMode, setSimulatorMode] = useState('ios');
 
   const iframe = useRef(null);
   const iframeLoaded = useRef(false);
@@ -47,7 +47,7 @@ const DocDemo = (props) => {
             'is-selected': mode === ionicMode,
           })}
           title={`Toggle ${mode === 'ios' ? 'iOS' : 'Android'} mode`}
-          onClick={() => setIonicMode(mode)}
+          onClick={() => setSimulatorMode(mode)}
         >
           {mode === 'ios' ? 'iOS' : 'Android'}
         </button>
@@ -78,7 +78,7 @@ const DocDemo = (props) => {
         <svg className="docs-demo-device__ios-notch" viewBox="0 0 219 31">
           <path
             d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           />
         </svg>
         <iframe

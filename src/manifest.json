@@ -1,6 +1,6 @@
 {
-  "name": "Ionic Documentation",
-  "short_name": "Ionic Docs",
+  "name": "Simulator Documentation",
+  "short_name": "Simulator Docs",
   "start_url": "/docs/",
   "display": "standalone",
   "icons": [

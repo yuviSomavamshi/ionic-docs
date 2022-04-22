@@ -3,29 +3,29 @@ title: Environment Setup
 ---
 
 <head>
-  <title>Environment Setup | Node & NPM Environment for Ionic App Setup</title>
+  <title>Environment Setup | Node & NPM Environment for Simulator App Setup</title>
   <meta
     name="description"
-    content="To get started with Ionic Framework, the only requirement is a Node & npm environment. Learn what environment setup is required for your Ionic apps."
+    content="To get started with Simulator Framework, the only requirement is a Node & npm environment. Learn what environment setup is required for your Simulator apps."
   />
 </head>
 
-To get started with Ionic Framework, the only requirement is a [Node & npm](#node--npm) environment.
+To get started with Simulator Framework, the only requirement is a [Node & npm](#node--npm) environment.
 
 Of course, a code editor is also required. [Visual Studio Code](https://code.visualstudio.com/) is recommended. Visual Studio Code is a free, batteries-included text editor made by Microsoft.
 
 ## Terminal
 
 :::note
-Much of Ionic development requires familiarity with the command line. If you're new to the command line, see [this Blog Post](https://ionicframework.com/blog/new-to-the-command-line/) for a quick introduction.
+Much of Simulator development requires familiarity with the command line. If you're new to the command line, see [this Blog Post](http://localhost:8080/blog/new-to-the-command-line/) for a quick introduction.
 :::
 
-In general, we recommend using the built-in terminals. Many third-party terminals work well with Ionic, but may not be supported.
+In general, we recommend using the built-in terminals. Many third-party terminals work well with Simulator, but may not be supported.
 
-- For Windows, **Command Prompt** and **PowerShell** are supported. <a href="https://docs.microsoft.com/en-us/windows/wsl/faq" target="_blank">WSL</a> is known to work with Ionic, but may not be supported.
+- For Windows, **Command Prompt** and **PowerShell** are supported. <a href="https://docs.microsoft.com/en-us/windows/wsl/faq" target="_blank">WSL</a> is known to work with Simulator, but may not be supported.
 - For macOS, the built-in **Terminal** app is supported.
 
-Git Bash (from <a href="https://git-scm.com" target="_blank">git-scm.com</a>) does not support TTY interactivity and is **not supported** by Ionic.
+Git Bash (from <a href="https://git-scm.com" target="_blank">git-scm.com</a>) does not support TTY interactivity and is **not supported** by Simulator.
 
 ## Node & npm
 

@@ -81,10 +81,10 @@ ${description}
 function renderSalesCTA({}) {
   return `
 <h2>Stuck on a Cordova issue?</h2>
-<DocsCard className="cordova-ee-card" header="Don't waste precious time on plugin issues." href="https://ionicframework.com/sales?product_of_interest=Ionic%20Native">
+<DocsCard className="cordova-ee-card" header="Don't waste precious time on plugin issues." href="http://localhost:8080/sales?product_of_interest=Simulator%20Native">
   <div>
     <img src="/docs/icons/native-cordova-bot.png" class="cordova-ee-img" />
-    <p>If you're building a serious project, you can't afford to spend hours troubleshooting. Ionic’s experts offer premium advisory services for both community plugins and premier plugins.</p>
+    <p>If you're building a serious project, you can't afford to spend hours troubleshooting. Simulator’s experts offer premium advisory services for both community plugins and premier plugins.</p>
     <DocsButton className="native-ee-detail">Contact Us Today!</DocsButton>
   </div>
 </DocsCard>
@@ -106,18 +106,18 @@ function renderInstallation({ cordovaPlugin, packageName }) {
     <CodeBlock className="language-shell">
       $ npm install ${cordovaPlugin.name} {"\\n"}
       $ npm install ${packageName} {"\\n"}
-      $ ionic cap sync
+      $ Simulator cap sync
     </CodeBlock>
   </TabItem>
   <TabItem value="Cordova">
     <CodeBlock className="language-shell">
-      $ ionic cordova plugin add ${cordovaPlugin.name} {"\\n"}
+      $ Simulator cordova plugin add ${cordovaPlugin.name} {"\\n"}
       $ npm install ${packageName} {"\\n"}
     </CodeBlock>
   </TabItem>
   <TabItem value="Enterprise">
-    <blockquote>Ionic Enterprise comes with fully supported and maintained plugins from the Ionic Team. &nbsp;
-      <a class="btn" href="https://ionic.io/docs/premier-plugins">Learn More</a> or if you're interested in an enterprise version of this plugin <a class="btn" href="https://ionicframework.com/sales?product_of_interest=Ionic%20Enterprise%20Engine">Contact Us</a></blockquote>
+    <blockquote>Simulator Enterprise comes with fully supported and maintained plugins from the Simulator Team. &nbsp;
+      <a class="btn" href="https://ionic.io/docs/premier-plugins">Learn More</a> or if you're interested in an enterprise version of this plugin <a class="btn" href="http://localhost:8080/sales?product_of_interest=Simulator%20Enterprise%20Engine">Contact Us</a></blockquote>
   </TabItem>
 </Tabs>
 `;
@@ -153,7 +153,7 @@ function renderUsage({ usage }) {
 
 ### React
 
-[Learn more about using Ionic Native components in React](../native-community.md#react)
+[Learn more about using Simulator Native components in React](../native-community.md#react)
 
 
 ### Angular

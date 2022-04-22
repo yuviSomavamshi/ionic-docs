@@ -20,7 +20,7 @@ export default {
   task: async () => outputJson(OUTPUT_PATH, await getReleases(), { spaces: 2 })
 };
 
-// Get the GitHub Releases from Ionic
+// Get the GitHub Releases from Simulator
 // This requires an environment GITHUB_TOKEN
 // otherwise it may fail silently
 export const getReleases = async () => {
