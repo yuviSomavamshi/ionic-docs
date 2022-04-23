@@ -12,10 +12,10 @@ import DocsCard from '@components/global/DocsCard';
 import DocsCards from '@components/global/DocsCards';
 
 <head>
-  <title>Open-Source UI Toolkit to Create Your Own Mobile or Desktop Apps</title>
+  <title>Simulator</title>
   <meta
     name="description"
-    content="Simulator Framework is an open-source UI toolkit to create your own mobile and desktop apps using web technologies with integrations for popular frameworks."
+    content="Platform Simulator tools."
   />
   <link rel="canonical" href="http://localhost:8080/docs" />
   <link rel="alternate" href="http://localhost:8080/docs" hreflang="x-default" />
@@ -23,7 +23,9 @@ import DocsCards from '@components/global/DocsCards';
   <meta property="og:url" content="http://localhost:8080/docs" />
 </head>
 
-Simulator is an open source UI toolkit for building performant, high-quality mobile and desktop apps using web technologies — HTML, CSS, and JavaScript — with integrations for popular frameworks like [React](react.md), and [Vue](vue/overview.md).
+The Altiostar Simulator adds to the capabilities of the industry- standard test mobile to provide a full wrap-around test of a 5G gNB for 5G standalone (SA) mode.
+
+Simulator enables the user to create and run customizable message flows for many different simulated scenarios. 
 
 Get started building by [installing Simulator](intro/cli.md) or following our [First App Tutorial](intro/next.md#build-your-first-app) to learn the main concepts.
 
@@ -59,15 +61,42 @@ Get started building by [installing Simulator](intro/cli.md) or following our [F
 
 ## Overview
 
-Simulator focuses on the frontend UX and UI interaction of an app — UI controls, interactions, gestures, animations. It's easy to learn, and integrates with other libraries or frameworks, such as [React](react/overview.md), or [Vue](vue/overview.md). Alternatively, it can be used standalone without any frontend framework using a simple [script include](intro/cdn.md). If you’d like to learn more about Simulator before diving in, we <a href="https://youtu.be/p3AN3igqiRc" target="_blank">created a video</a> to walk you through the basics.
+3GPP defines a new 5G Core network, referred to as 5GC, as well as a new radio access technology called 5G “New Radio” (NR). Unlike previous generations that required that both access and core network of the same generation to be deployed (e.g., Evolved Packet Core (EPC) and Long Term Evolution (LTE) together forms Evolved Packet System (EPS)), with 5G it is possible to integrate elements of different generations in Standalone (SA) and Non-standalone (NSA) configurations.
 
-### One codebase, running everywhere
+The significant feature of 5G is its capability to support enormous services and applications, massive connections, new channel coding scheme at very high bandwidth—up to 20 Gbps and utilizing very high frequency bands up to 100 GHz as well as the legacy cellular frequency bands. The 5G can also operate in the existing LTE frequency bands, or in even smaller bands, as the usable bandwidth is scalable.
 
-Simulator is the only mobile app stack that enables web developers to build apps for all major app stores and the mobile web from a single codebase. And with [Adaptive Styling](theming/platform-styles.md), Simulator apps look and feel at home on every device.
+However, deploying high-quality voice, video, and data services over 5G has posed significant challenges for service providers, due to backward compatibility, inter-operability, and high-quality requirements – all of which require rigorous testing.
 
-### A focus on performance
+As depicted in the above network architecture, the End-to-End 5G network comprises of 5G Access Network (gNB), Access and Mobility Management Function (AMF), Authentication Server Function (AUSF), Network Slice Selection Function (NSSF), Unified Data Management (UDM), Session Management Function (SMF), Short Message Service Function (SMSF), Equipment Identity Register (EIR) and User Plane Function (UPF) connected to Data Server or Application Functions and to EPC/IMS core for interoperability.
 
-Simulator is built to perform and behave great on the latest mobile devices with best practices like efficient hardware accelerated transitions, and touch-optimized gestures.
+MAPS™ 5G supports service-based architecture, includes a set of Network Functions (NFs) providing services as defined in 3GPP TS 23.501. Services use REST APIs based on HTTP and JSON data format.
+
+GL’s comprehensive Signaling and Traffic Emulation 5G test equipment suite for 5G Wireless Network, referred commonly as MAPS™, provides a unique programmable, scriptable framework for 5G device test, that is independent of any protocol or network, makes it easy to perform cross-domain testing and transition tests to new technology such as 5G. The core network and all its underlying entities can be accurately tested for functionalities and performance.
+
+### vRAN Architecture
+
+As illustrated in Figure 8, Altiostar’s vRAN architecture consists of eNB virtual Centralized Unit
+(vCU), eNB virtual Distributed Unit (vDU), virtual EMS (vEMS), Radio Interface Unit (RIU) and 3rd
+party Remote Radio Head (RRH) and Antennas.
+
+Each cell-site may have multiple 3rd party RRHs and Antennas. These are connected to a single
+RIU over CPRI. Multiple such RIUs interface with a single instance of an vDU, which can be run
+in an edge data center cloud. Multiple such vDUinstances interface with a single instance of an
+vCU, which can be run in a centralized data center cloud. Multiple such vCU instances interface
+with a single instance of vEMS, which can be run in a centralized data center cloud. vDU and
+vCU can be run in the same data center cloud.
+
+<img
+  src="/docs/img/telecomm/open-vran-model.jpg"
+  alt="Image of Paradigm Shift on Telecom"
+/>
+
+### Paradigm Shift on Telecom
+
+<img
+  src="/docs/img/telecomm/paradigm-shift.jpg"
+  alt="Image of Paradigm Shift on Telecom"
+/>
 
 ### Clean, simple, and functional design
 

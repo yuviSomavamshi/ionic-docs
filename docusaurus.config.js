@@ -1,7 +1,4 @@
 const path = require('path');
-const prismic = require('@prismicio/client');
-const fetch = require('node-fetch');
-
 const BASE_URL = '/docs';
 
 module.exports = {
@@ -41,7 +38,7 @@ module.exports = {
         {
           type: 'doc',
           docId: 'index',
-          label: 'Guide',
+          label: 'Overview',
           position: 'left',
         },
         {
@@ -105,7 +102,7 @@ module.exports = {
         lastVersion: 'current',
         versions: {
           current: {
-            label: 'v6',
+            label: 'v1',
             banner: 'none',
           },
         },
