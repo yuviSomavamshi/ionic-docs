@@ -27,8 +27,6 @@ The Altiostar Simulator adds to the capabilities of the industry- standard test 
 
 Simulator enables the user to create and run customizable message flows for many different simulated scenarios. 
 
-Get started building by [installing Simulator](intro/cli.md) or following our [First App Tutorial](intro/next.md#build-your-first-app) to learn the main concepts.
-
 <intro-end />
 
 <DocsCards>
