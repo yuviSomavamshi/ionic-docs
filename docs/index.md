@@ -46,17 +46,14 @@ Get started building by [installing Simulator](intro/cli.md) or following our [F
 </DocsCard>
 
 <DocsCard
-  header="Native Functionality"
+  header="Test Utilities"
   href="/native"
   icon="/icons/guide-native-icon.svg"
   hoverIcon="/icons/guide-native-icon-hover.svg"
 >
-  <p>Integrate native device plugins, like Bluetooth, Maps, HealthKit, and more.</p>
+  <p>Various test utilities.</p>
 </DocsCard>
 
-  <DocsCard header="Theming" href="/theming/basics" icon="/icons/guide-theming-icon.svg" hoverIcon="/icons/guide-theming-icon-hover.svg">
-    <p>Learn to easily customize and modify your Simulator app's visual design to fit your brand.</p>
-  </DocsCard>
 </DocsCards>
 
 ## Overview
