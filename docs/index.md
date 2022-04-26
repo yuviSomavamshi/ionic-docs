@@ -82,14 +82,14 @@ with a single instance of vEMS, which can be run in a centralized data center cl
 vCU can be run in the same data center cloud.
 
 <img
-  src="/docs/img/telecomm/open-vran-model.jpg"
+  src="/img/telecomm/open-vran-model.jpg"
   alt="Image of Paradigm Shift on Telecom"
 />
 
 ### Paradigm Shift on Telecom
 
 <img
-  src="/docs/img/telecomm/paradigm-shift.jpg"
+  src="/img/telecomm/paradigm-shift.jpg"
   alt="Image of Paradigm Shift on Telecom"
 />
 

@@ -1,12 +1,11 @@
 const path = require('path');
-const BASE_URL = '/docs';
 
 module.exports = {
   title: 'Simulator Documentation',
   tagline:
     'Simulator is the app platform for web developers. Build amazing mobile, web, and desktop apps all with one shared code base and open web standards',
-  url: 'http://localhost:8080',
-  baseUrl: `${BASE_URL}/`,
+  url: 'https://www.altiostar.com/',
+  baseUrl: '/simulator/docs/',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -16,9 +15,9 @@ module.exports = {
   },
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'logos/simulator-logo.svg',
-  organizationName: 'simulator-team',
-  projectName: 'simulator-docs',
+  favicon: '/icons/favicon.svg',
+  organizationName: 'altiostar',
+  projectName: 'altiostar',
   themeConfig: {
     colorMode: {
       defaultMode: 'light',
@@ -29,7 +28,7 @@ module.exports = {
         alt: 'Simulator Logo',
         src: `/logos/simulator-logo.svg`,
         srcDark: `/logos/simulator-logo.svg`,
-        href: '/',
+        href: '/simulator/docs/',
         target: '_self',
         width: 30,
         height: 30,
@@ -40,11 +39,7 @@ module.exports = {
           docId: 'index',
           label: 'Overview',
           position: 'left',
-        },
-        {
-          type: 'search',
-          position: 'right',
-        },
+        }
       ],
     },
     tagManager: {
@@ -59,7 +54,8 @@ module.exports = {
       appId: 'O9QSL985BS',
       apiKey: 'ceb5366064b8fbf70959827cf9f69227',
       indexName: 'ionicframework',
-      contextualSearch: true,
+      contextualSearch: false,
+      searchPagePath: false
     },
   },
   plugins: [
